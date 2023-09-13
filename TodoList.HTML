@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>代辦事項</title>
+
+
+<body>
+    <header>
+        <div class="wapper">
+            <ul>
+
+                <li class="active">My Tasks</li>
+                <li>In Progress</li>
+                <li>Completed</li>
+
+            </ul>
+        </div>
+    </header>
+
+
+
+
+
+    <form>
+        <div class="here">
+            <input type="checkbox" value="Type Something Here" />
+
+
+            <input type="text" placeholder="Type Something Here" size="15" maxlength="30" />
+    </form>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="one">
+        <form>
+            <label for="Deadline">Deadline:</label><br />
+            <input type="date">
+            <input type="text" placeholder="hh mm" />
+
+        </form>
+
+        <p></p>
+
+        <from>
+            <label for="username">File : </label> <br />
+            <input type="file" name="檔案" />
+        </from>
+
+        <p></p>
+
+        <from>
+            Comment :<br />
+            <textarea name="Comment" cols="10" rows="8"> Type your memo here....
+         </textarea>
+        </from>
+    </div>
+    <div class="form-container">
+        <button class="left">X Cancel</button><button class="right">+ Add task</button>
+    </div>
+
+
+
+    <p></p>
+    <div class="ex1">
+        <input type="checkbox" value="Type Something Here" /> Type Something Here
+        <div class="time">5/14</div>
+    </div>
+
+
+    <div class="ex2">
+        <input type="checkbox" value="Type Something Here" /> Type Something Here
+    </div>
+
+
+    <div class="ex3">
+        <input type="checkbox" value="Type Something Here" /> Type Something Here<br />
+        <dive class="time"> 2019/6/18
+    </div>
+    </div>
+
+
+    <div class="ex4">
+        <input type="checkbox" value="Type Something Here" /> Type Something Here
+    </div>
+
+
+    <div class="ex5">
+        <s><input type="checkbox" value="Type Something Here" checked="checked" />
+            Type Something Here</s>
+    </div>
+    <br />
+
+</BODY>
+
+</html>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background-color: #E1E1E1;
+    }
+
+    header {
+        height: 76px;
+        background: #4a90e2;
+    }
+
+    header ul {
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        list-style: none;
+    }
+
+    header ul li {
+        display: inline-block;
+        width: 160px;
+        height: 76px;
+        margin-right: 70px;
+        color: #00408B;
+        font-size: 24px;
+        line-height: 76px;
+        text-align: center;
+    }
+
+    header ul :last-child {
+        margin-right: 0;
+    }
+
+    header ul li.active,
+    header ul li:hover {
+        color: #fff;
+        border-bottom: 5px solid #00408B;
+    }
+
+    .wapper {
+        width: 620px;
+        margin: 0 auto;
+    }
+
+
+
+    .here {
+        font-size: 24px;
+        width: 620px;
+        margin-top: 22px;
+        text-align: left;
+        background: #F2F2F2;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 20px;
+        border: 0px;
+
+    }
+
+
+
+    .one {
+        width: 620px;
+        background: #F2F2F2;
+        margin-top: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        padding: 10px 60px;
+        margin-bottom: 0;
+    }
+
+    input[type="date"] {
+        width: 162px;
+        height: 35px;
+    }
+
+    input[type="text"] {
+        width: 162px;
+        height: 35px;
+    }
+
+    textarea {
+        width: 413px;
+        height: 104px;
+    }
+
+
+
+
+    .form-container {
+        width: 620PX;
+        height: 60PX;
+        margin: 0 auto;
+    }
+
+    .form-container:hover {
+        background: #4A90E2;
+    }
+
+
+
+
+    .left {
+        background-color: transparent;
+        border-color: transparent;
+        width: 310px;
+        height: 60px;
+        color: red;
+        font-size: 24PX;
+        background: #fff;
+    }
+
+    .left:hover {
+        background: #4A90E2;
+        color: #fff;
+    }
+
+    .right {
+        background: transparent;
+        border-color: transparent;
+        width: 310px;
+        height: 60px;
+        color: #FFFFFf;
+        background-color: #4A90E2;
+        font-size: 24px;
+    }
+
+    .time {
+        font-size: 16px;
+        color: #757575;
+    }
+
+
+    .ex1 {
+        background: #FFF2DC;
+        width: 620px;
+        height: 102px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+        padding: 20px 20px;
+    }
+
+    .ex2 {
+        background: #FFF2DC;
+        width: 620px;
+        height: 102px;
+        margin: 10px auto;
+        font-size: 24px;
+        padding: 20px 20px;
+    }
+
+
+
+    .ex3 {
+        background: #F2F2F2;
+        width: 620px;
+        height: 102px;
+        margin: 10px auto;
+        font-size: 24px;
+        padding: 20px 20px;
+    }
+
+    .ex4 {
+        background: #F2F2F2;
+        width: 620px;
+        height: 102px;
+        margin: 10px auto;
+        font-size: 24px;
+        padding: 20px 20px;
+    }
+
+    .ex5 {
+        background: #F2F2F2;
+        width: 620px;
+        height: 76px;
+        margin: 10px auto;
+        font-size: 24px;
+        padding: 20px 20px;
+    }
+</style>
