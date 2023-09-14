@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./page2.css" />
+  </head>
   <body>
     <header>
       <div class="wapper">
@@ -12,60 +14,111 @@
       </div>
     </header>
 
-    <from>
-      <div class="addtask">
-        <input type="text" class="fromtext" placeholder="+Add Task" />
+    <form>
+      <div class="addtext">
+        <input type="text" class="formtext" placeholder="+Add Task" />
       </div>
-    </from>
+    </form>
+
+    <form>
+      <div class="dennie">
+        <input type="checkbox" class="checkbox1" />
+        <input
+          type="text"
+          value="Cloud Progress With Dennie"
+          class="dennietext"
+        />
+      </div>
+    </form>
+
+    <p></p>
+
+    <form>
+      <input type="date" value="2023-9-13" /><input type="text" value="23:47" />
+    </form>
   </body>
 </html>
 
 <style>
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    background-color: #e1e1e1;
-  }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background-color: #e1e1e1;
+    }
 
-  header {
-    height: 76px;
-    background: #4a90e2;
-  }
+    header {
+      height: 76px;
+      background: #4a90e2;
+    }
 
-  header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0;
-  }
+    header ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0;
+    }
 
-  header ul li {
-    display: inline-block;
+    header ul li {
+      display: inline-block;
+      font-size: 24px;
+      text-align: center;
+      color: #00408b;
+      height: 76px;
+      line-height: 76px;
+      width: 160px;
+      margin-right: 70px;
+    }
+
+    .wapper {
+      width: 620px;
+      margin: 0 auto;
+    }
+
+    header ul :last-child {
+      margin-right: 0;
+    }
+
+    .formtext {
+      /* display: inline-block; */
+      width: 620px;
+      height: 65px;
+      margin-top: 20px;
+      font-size: 24px;
+      padding-left: 20px;
+    }
+
+    .addtext {
+      text-align: center;
+    }
+
+    .dennie {
+      font-size: 24px;
+        width: 620px;
+        margin-top: 20px;
+        text-align: left;
+        background: #F2F2F2;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        padding: 20px 20px;
+        background: #FFF2DC ;
+        text-align: center;
+
+
+    }
+
+    .dennietext{
+    border: none;
+    background: ;
     font-size: 24px;
-    text-align: center;
-    color: #00408b;
-    height: 76px;
-    line-height: 76px;
-    width: 160px;
-    margin-right: 70px;
+    padding-right: 100px;
+    background: #FFF2DC ;
+    padding-right: 0;
+
+
   }
 
-  .wapper {
-    width: 620px;
-    margin: 0 auto;
-  }
 
-  header ul :last-child {
-    margin-right: 0;
-  }
-
-  .addtext {
-    width: 620px;
-    height: 65px;
-    margin-top: 20px;
-    font-size: 24px;
-    padding-left: 20px;
-  }
+    }
 </style>

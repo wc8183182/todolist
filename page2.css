@@ -1,0 +1,60 @@
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background-color: #e1e1e1;
+  }
+
+  header {
+    height: 76px;
+    background: #4a90e2;
+  }
+
+  header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+  }
+
+  header ul li {
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+    color: #00408b;
+    height: 76px;
+    line-height: 76px;
+    width: 160px;
+    margin-right: 70px;
+  }
+
+  .wapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  header ul :last-child {
+    margin-right: 0;
+  }
+
+  .formtext {
+    display: inline-block;
+    width: 620px;
+    height: 65px;
+    margin-top: 20px;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  .addtext{
+  text-align: center;}
+
+  .dennie{
+  display: inline-block;
+  width: 620px;
+  height: 76px;
+  }
+  
+
