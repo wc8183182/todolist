@@ -65,119 +65,133 @@
           />
         </div>
       </form>
-      
-      <form>
-        <input type="checkbox">
-      </form>
-      
-    
+    </div>
+
+    <form class="button1">
+      <button class="add">+ Add</button> <button class="save">+ Save</button>
+    </form>
+    <p></p>
+
+    <form class="ex1">
+      <input type="checkbox" class="checkbox2" />
+      <input text="text" value="Type Something Here..." class="ex2text" />
+    </form>
+    <p></p>
+    <form class="ex2">
+      <input type="checkbox" class="checkbox2" />
+      <input type="text" value="Type Something Here…" class="ex2text" />
+      <div class="ex2-1">5/14</div>
+    </form>
+    <p></p>
+    <form class="ex3">
+      <input type="checkbox" class="checkbox3" />
+      <input text="text" value="Type Something Here..." class="ex3text" />
+    </form>
   </body>
 </html>
 
 <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      background-color: #e1e1e1;
-    }
-
-    header {
-      height: 76px;
-      background: #4a90e2;
-    }
-
-    header ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      font-size: 0;
-    }
-
-    header ul li {
-      display: inline-block;
-      font-size: 24px;
-      text-align: center;
-      color: #00408b;
-      height: 76px;
-      line-height: 76px;
-      width: 160px;
-      margin-right: 70px;
-    }
-
-    .wapper {
-      width: 620px;
-      margin: 0 auto;
-    }
-
-    header ul :last-child {
-      margin-right: 0;
-    }
-
-    .formtext {
-      display: inline-block;
-      width: 620px;
-      height: 65px;
-      margin-top: 20px;
-      font-size: 24px;
-      padding-left: 20px;
-      text-align: center;
-    }
-
-    .addtext {
-      text-align: center;
-    }
-
-    .dannie {
-      background: #fff2dc;
-      width: 620px;
-      height: 76px;
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .dannietext {
-      width: 280px;
-      height: 76px;
-      font-size: 24px;
-      margin-bottom: 0px;
-      border: none;
-      background: #fff2dc;
-    }
-
-    .checkbox1 {
-      width: 24px;
-      height: 24px;
-    }
-
-    .time{
-      width: 620px;
-      height: 383px;
-      background: #f2f2f2;
-      margin-left: auto;
-      margin-right: auto;
-
-    }
-
-
-    .deadlinedate{
-      font-size: 20px;
-      margin-left: 60px;
-      /* margin-top: px; */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background-color: #e1e1e1;
   }
 
-  .file1{
-  font-size: 20px;
-  margin-left: 60px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  header {
+    height: 76px;
+    background: #4a90e2;
   }
 
-  .comment{
-  font-size: 20px;
-  margin-left: 60px;
+  header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+  }
+
+  header ul li {
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+    color: #00408b;
+    height: 76px;
+    line-height: 76px;
+    width: 160px;
+    margin-right: 70px;
+  }
+
+  .wapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  header ul :last-child {
+    margin-right: 0;
+  }
+
+  .formtext {
+    display: inline-block;
+    width: 620px;
+    height: 65px;
+    margin-top: 20px;
+    font-size: 24px;
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  .addtext {
+    text-align: center;
+  }
+
+  .dannie {
+    background: #fff2dc;
+    width: 620px;
+    height: 76px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dannietext {
+    width: 280px;
+    height: 76px;
+    font-size: 24px;
+    margin-bottom: 0px;
+    border: none;
+    background: #fff2dc;
+  }
+
+  .checkbox1 {
+    width: 24px;
+    height: 24px;
+  }
+
+  .time {
+    width: 620px;
+    height: 383px;
+    background: #f2f2f2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .deadlinedate {
+    font-size: 20px;
+    margin-left: 60px;
+    /* margin-top: px; */
+  }
+
+  .file1 {
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .comment {
+    font-size: 20px;
+    margin-left: 60px;
   }
 
   .commenttext {
@@ -186,12 +200,109 @@
     text-align: left;
     line-height: px;
     padding: 0px;
+  }
 
+  .add {
+    width: 310px;
+    height: 60px;
+    border: transparent;
+    background: #ffffff;
+    font-size: 24px;
+    color: red;
+  }
 
+  .save {
+    width: 310px;
+    height: 60px;
+    border: transparent;
+    background: #4a90e2;
+    font-size: 24px;
+  }
 
+  .button1 {
+    margin: 0 auto;
+    font-size: 0px;
+    width: 620px;
+  }
 
+  .add:hover {
+    background-color: #4a90e2;
+    color: black;
+  }
 
+  .ex2 {
+    width: 620px;
+    height: 102px;
+    background: #fff2dc;
+    margin: 0 auto;
+  }
 
+  .ex2text {
+    border: transparent;
+    width: 248px;
+    height: 48px;
+    font-size: 24px;
+    background: #fff2dc;
+    margin-top: 20px;
+  }
 
+  .checkbox2 {
+    width: 24px;
+    height: 24px;
+    /* line-height: 102px; */
+    margin-left: 25px;
+    margin-right: 5px;
+  }
 
-    </style>
+  .ex2-1 {
+    margin-left: 50px;
+  }
+
+  .ex1 {
+    width: 620px;
+    height: 102px;
+    background: #fff2dc;
+    margin: 0 auto;
+  }
+
+  .ex1text {
+    border: transparent;
+    width: 248px;
+    height: 48px;
+    font-size: 24px;
+    background: #fff2dc;
+    margin-top: 20px;
+  }
+
+  .checkbox1 {
+    width: 24px;
+    height: 24px;
+    /* line-height: 102px; */
+    margin-left: 25px;
+    margin-right: 5px;
+  }
+
+  .ex3 {
+    width: 620px;
+    height: 102px;
+    background: #fff2dc;
+    margin: 0 auto;
+  }
+
+  .ex3text {
+    border: transparent;
+    width: 248px;
+    height: 48px;
+    font-size: 24px;
+    background: #fff2dc;
+    margin-top: 20px;
+  }
+
+  .checkbox3 {
+    width: 24px;
+    height: 24px;
+    /* line-height: 102px; */
+    margin-left: 25px;
+    margin-right: 5px;
+  }
+</style>
