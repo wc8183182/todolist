@@ -73,8 +73,8 @@
     <p></p>
 
     <form class="ex1">
-      <input type="checkbox" class="checkbox2" />
-      <input text="text" value="Type Something Here..." class="ex2text" />
+      <input type="checkbox" class="checkbox1" />
+      <input text="text" value="Type Something Here..." class="ex1text" />
     </form>
     <p></p>
     <form class="ex2">
@@ -83,9 +83,14 @@
       <div class="ex2-1">5/14</div>
     </form>
     <p></p>
+    <form class="ex1">
+      <input type="checkbox" class="checkbox1" />
+      <input text="text" value="Type Something Here..." class="ex1text" />
+    </form>
+    <p></p>
     <form class="ex3">
-      <input type="checkbox" class="checkbox3" />
-      <input text="text" value="Type Something Here..." class="ex3text" />
+      <input type="checkbox" class="checkbox3" checked />
+      <input type="text" value="Type Something Here..." class="ex3text" />
     </form>
   </body>
 </html>
@@ -230,34 +235,6 @@
     color: black;
   }
 
-  .ex2 {
-    width: 620px;
-    height: 102px;
-    background: #fff2dc;
-    margin: 0 auto;
-  }
-
-  .ex2text {
-    border: transparent;
-    width: 248px;
-    height: 48px;
-    font-size: 24px;
-    background: #fff2dc;
-    margin-top: 20px;
-  }
-
-  .checkbox2 {
-    width: 24px;
-    height: 24px;
-    /* line-height: 102px; */
-    margin-left: 25px;
-    margin-right: 5px;
-  }
-
-  .ex2-1 {
-    margin-left: 50px;
-  }
-
   .ex1 {
     width: 620px;
     height: 102px;
@@ -271,38 +248,64 @@
     height: 48px;
     font-size: 24px;
     background: #fff2dc;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .checkbox1 {
     width: 24px;
     height: 24px;
-    /* line-height: 102px; */
     margin-left: 25px;
     margin-right: 5px;
   }
 
-  .ex3 {
+  .ex2 {
     width: 620px;
     height: 102px;
     background: #fff2dc;
     margin: 0 auto;
   }
 
-  .ex3text {
+  .ex2text {
     border: transparent;
     width: 248px;
     height: 48px;
     font-size: 24px;
     background: #fff2dc;
+    margin-top: 25px;
+  }
+
+  .checkbox2 {
+    width: 24px;
+    height: 24px;
     margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 5px;
+  }
+
+  .ex2-1 {
+    margin-left: 50px;
+  }
+
+  .ex3text {
+    text-decoration: line-through;
+    border: transparent;
+    font-size: 24px;
+    width: 248px;
+    height: 48px;
+    background: #fff2dc;
+    margin-top: 15px;
+  }
+
+  .ex3 {
+    width: 620px;
+    height: 76px;
+    background: #fff2dc;
+    margin: 0 auto;
   }
 
   .checkbox3 {
+    margin-left: 25px;
     width: 24px;
     height: 24px;
-    /* line-height: 102px; */
-    margin-left: 25px;
-    margin-right: 5px;
   }
 </style>
