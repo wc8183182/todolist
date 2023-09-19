@@ -2,13 +2,21 @@
 <html>
   <head> </head>
   <body>
-    <div class="wapper">
-      <ul>
-        <li>The task</li>
-        <li>In Progress</li>
-        <li>Completed</li>
-      </ul>
-    </div>
+    <header>
+      <div class="wapper">
+        <ul>
+          <li>The Tasks</li>
+          <li class="active">In Progress</li>
+          <li>Completed</li>
+        </ul>
+      </div>
+    </header>
+
+    <form>
+      <div class="AddTask">
+        <input type="text" placeholder="+ Add Task" />
+      </div>
+    </form>
   </body>
 </html>
 
@@ -21,24 +29,49 @@
     margin: 0;
     background: #e1e1e1;
   }
-  .wapper {
+  header {
     height: 76px;
     background: #4a90e2;
-    text-align: center;
-  }
-
-  ul li {
-    font-size: 24px;
-    display: inline-block;
-    line-height: 76px;
-    margin-right: 70px;
-    width: 160px;
-    color: #00408b;
   }
 
   ul {
     padding: 0;
     margin: 0;
     font-size: 0;
+    list-style: none;
+  }
+
+  ul li {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 76px;
+    margin-right: 70px;
+    width: 160px;
+    color: #00408b;
+    text-align: center;
+    height: 76px;
+  }
+
+  .wapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  ul :last-child {
+    margin-right: 0;
+  }
+  /* 
+  ul:last-child {
+  margin-right: 0;
+  } */
+
+  .active {
+    color: #fff;
+    border-bottom: 5px solid #00408b;
+  }
+
+  ul li:hover {
+    color: #fff;
+    border-bottom: 5px solid #004a8b;
   }
 </style>
