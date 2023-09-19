@@ -7,7 +7,7 @@
     <header>
       <div class="wapper">
         <ul>
-          <li>My Task</li>
+          <li class="active">My Task</li>
           <li>In Progress</li>
           <li>Completed</li>
         </ul>
@@ -130,6 +130,15 @@
   .wapper {
     width: 620px;
     margin: 0 auto;
+  }
+
+  ul li.active {
+    color: #ffffff;
+    border-bottom: 5px solid #00408b;
+  }
+
+  ul li:hover {
+    color: #ffffff;
   }
 
   header ul :last-child {
