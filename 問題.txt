@@ -4,3 +4,12 @@
   } */
 
 ul後面空格有差嗎
+
+
+  ul li {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 70px;
+    width: 160px;
+    line-height: 76px;
+    height: 76px;  這裡
