@@ -15,8 +15,21 @@
     </header>
 
     <form>
-      <input type="text" value=" + Add Tasks" />
+      <div class="form1">
+        <input type="text" class="formtext" placeholder="+ Add Task" />
+      </div>
     </form>
+
+    <div class="form2">
+      <form>
+        <input type="checkbox" checked class="checkbox1" />
+        <input
+          type="text"
+          class="form2text"
+          placeholder=" Type Something Here... "
+        />
+      </form>
+    </div>
   </body>
 </html>
 
@@ -69,5 +82,40 @@
   ul li:hover {
     color: #fff;
     border-bottom: 5px solid #00408b;
+  }
+
+  .formtext {
+    font-size: 24px;
+    width: 620px;
+    height: 65px;
+    padding-left: 30px;
+  }
+
+  .form1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .form2 {
+    width: 620px;
+    height: 65px;
+    background: #f2f2f2;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form2text {
+    border: none;
+    font-size: 24px;
+    background: #f2f2f2;
+    line-height: 65px;
+    text-decoration: line-through;
+  }
+
+  .checkbox1 {
+    width: 24px;
+    height: 24px;
+    margin-left: 30px;
   }
 </style>
