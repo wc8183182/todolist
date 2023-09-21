@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="./page2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -28,6 +31,14 @@
           value="Cloud project with Dannie"
           class="dannietext"
         />
+
+        <div class="ex1star">
+          <i class="fas fa-star"></i>
+        </div>
+
+        <div class="pencil">
+          <i class="fa-solid fa-pencil"></i>
+        </div>
       </div>
     </form>
 
@@ -35,9 +46,10 @@
     <div class="time">
       <form>
         <div class="deadlinedate">
+          <i class="fa-solid fa-calendar-days"></i>
           Deadline<br />
           <input type="date" value="2023-9-13" />
-          <input type="text" value="23:47" />
+          <input type="text" class="deadlinetext" value="23:47" />
         </div>
       </form>
 
@@ -45,6 +57,8 @@
 
       <from>
         <div class="file1">
+          <i class="fa-regular fa-file"></i>
+
           File<br />
           20230917.zip
           <br />
@@ -57,13 +71,15 @@
 
       <form>
         <div class="comment">
+          <i class="fa-regular fa-comment-dots"></i>
           Comment<br />
-          <input
-            type="text"
-            class="commenttext"
-            value="meet him at Lorence Cafe"
-          />
         </div>
+
+        <input
+          type="text"
+          value="meet him at Lorence Cafe"
+          class="commenttext"
+        />
       </form>
     </div>
 
@@ -75,22 +91,56 @@
     <form class="ex1">
       <input type="checkbox" class="checkbox1" />
       <input text="text" value="Type Something Here..." class="ex1text" />
+
+      <div class="ex1star">
+        <i class="fas fa-star"></i>
+      </div>
+
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
     </form>
     <p></p>
     <form class="ex2">
       <input type="checkbox" class="checkbox2" />
       <input type="text" value="Type Something Here…" class="ex2text" />
+
+      <div class="ex2star">
+        <i class="fa-regular fa-star"></i>
+      </div>
+
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
+
       <div class="ex2-1">5/14</div>
     </form>
+
     <p></p>
     <form class="ex4">
       <input type="checkbox" class="checkbox4" />
       <input text="text" value="Type Something Here..." class="ex4text" />
+
+      <div class="ex2star">
+        <i class="fa-regular fa-star"></i>
+      </div>
+
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
     </form>
     <p></p>
     <form class="ex3">
       <input type="checkbox" class="checkbox4" checked />
       <input type="text" value="Type Something Here..." class="ex3text" />
+
+      <div class="ex2star">
+        <i class="fa-regular fa-star"></i>
+      </div>
+
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
     </form>
   </body>
 </html>
@@ -194,7 +244,16 @@
   .deadlinedate {
     font-size: 20px;
     margin-left: 60px;
-    /* margin-top: px; */
+  }
+
+  input[type="date"] {
+    width: 162px;
+    height: 35px;
+  }
+
+  .deadlinetext {
+    width: 162px;
+    height: 35px;
   }
 
   .file1 {
@@ -212,9 +271,7 @@
   .commenttext {
     width: 413px;
     height: 104px;
-    text-align: left;
-    line-height: px;
-    padding: 0px;
+    margin-left: 55px;
   }
 
   .add {
@@ -341,5 +398,24 @@
     margin-top: 20px;
     margin-left: 25px;
     margin-right: 5px;
+  }
+
+  .ex1star {
+    display: inline-block;
+    font-size: large;
+    margin-left: 160px;
+    color: #f5a623;
+  }
+
+  .pencil {
+    display: inline-block;
+    font-size: large;
+    margin-left: 30px;
+  }
+
+  .ex2star {
+    display: inline-block;
+    font-size: large;
+    margin-left: 160px;
   }
 </style>

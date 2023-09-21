@@ -24,12 +24,10 @@
         <input type="checkbox" class="herecheck" />
         <input type="text" class="heretext" placeholder="Type Something Here" />
         <div class="star">
-          <i class="fa-regular fa-star"></i>
+          <i class="far fa-star"></i>
         </div>
 
-        <div class="pencil">
-          <i class="fa-solid fa-pencil"></i>
-        </div>
+        <div class="pencil"><i class="fas fa-pencil"></i></div>
       </div>
     </form>
 
@@ -70,12 +68,28 @@
       <div class="ex1">
         <input type="checkbox" class="ex1checkbox" />
         <input type="text" value="Type Something Here" class="ex1text" />
+
+        <div class="ex1star">
+          <i class="fas fa-star"></i>
+        </div>
+
+        <div class="pencil">
+          <i class="fas fa-pencil"></i>
+        </div>
       </div>
 
       <p></p>
       <div class="ex1">
         <input type="checkbox" class="ex1checkbox" />
         <input type="text" value="Type Something Here" class="ex1text" />
+
+        <div class="ex1star">
+          <i class="fas fa-star"></i>
+        </div>
+
+        <div class="pencil">
+          <i class="fa-solid fa-pencil"></i>
+        </div>
       </div>
 
       <p></p>
@@ -102,7 +116,7 @@
       </div>
 
       <div class="ex5">
-        <input type="checkbox" class="ex5checkbox" />
+        <input type="checkbox" class="ex5checkbox" checked />
         <input type="text" value="Type Something Here" class="ex5text" />
 
         <div class="star">
@@ -274,6 +288,7 @@
     border: none;
     font-size: 24px;
     background-color: #fff2dc;
+    width: 248px;
   }
 
   .ex3 {
@@ -316,9 +331,11 @@
   }
 
   .ex5text {
+    width: 248px;
     border: none;
     font-size: 24px;
     background: #f2f2f2;
+    text-decoration: line-through;
   }
 
   .star {
@@ -333,5 +350,14 @@
     margin-left: 30px;
     font-size: large;
     display: inline-block;
+  }
+
+  .ex1star {
+    color: #f5a623;
+    display: inline-block;
+    width: 24px;
+    height: 23px;
+    margin-left: 160px;
+    font-size: large;
   }
 </style>
