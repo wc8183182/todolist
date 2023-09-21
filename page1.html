@@ -6,7 +6,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <link rel="stylesheet" h
   </head>
 
   <body>
@@ -24,12 +23,19 @@
       <div class="here">
         <input type="checkbox" class="herecheck" />
         <input type="text" class="heretext" placeholder="Type Something Here" />
-        <i class="fa-regular fa-star"></i>
+        <div class="star">
+          <i class="fa-regular fa-star"></i>
+        </div>
+
+        <div class="pencil">
+          <i class="fa-solid fa-pencil"></i>
+        </div>
       </div>
     </form>
 
     <div class="one">
       <form>
+        <i class="fa-solid fa-calendar-days"></i>
         <label for="Deadline">Deadline:</label><br />
         <input type="date" />
         <input type="text" class="onetext" placeholder="hh mm" />
@@ -38,6 +44,7 @@
       <p></p>
 
       <from>
+        <i class="fa-regular fa-file"></i>
         <label for="username">File : </label> <br />
         <input type="file" name="檔案" />
       </from>
@@ -45,6 +52,7 @@
       <p></p>
 
       <from>
+        <i class="fa-regular fa-comment-dots"></i>
         Comment :<br />
         <textarea name="Comment" cols="10" rows="8">
  Type your memo here....
@@ -58,33 +66,54 @@
       ><button class="right">+ Add task</button>
     </div>
 
-    <p></p>
-    <div class="ex1">
-      <input type="checkbox" class="ex1checkbox" />
-      <input type="text" value="Type Something Here" class="ex1text" />
-    </div>
+    <form>
+      <div class="ex1">
+        <input type="checkbox" class="ex1checkbox" />
+        <input type="text" value="Type Something Here" class="ex1text" />
+      </div>
 
-    <p></p>
-    <div class="ex1">
-      <input type="checkbox" class="ex1checkbox" />
-      <input type="text" value="Type Something Here" class="ex1text" />
-    </div>
+      <p></p>
+      <div class="ex1">
+        <input type="checkbox" class="ex1checkbox" />
+        <input type="text" value="Type Something Here" class="ex1text" />
+      </div>
 
-    <p></p>
-    <div class="ex3">
-      <input type="checkbox" class="ex3checkbox" />
-      <input type="text" value="Type Something Here" class="ex3text" />
-    </div>
+      <p></p>
+      <div class="ex3">
+        <input type="checkbox" class="ex3checkbox" />
+        <input type="text" value="Type Something Here" class="ex3text" />
+        <div class="star">
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="pencil">
+          <i class="fa-solid fa-pencil"></i>
+        </div>
+      </div>
 
-    <div class="ex3">
-      <input type="checkbox" class="ex3checkbox" />
-      <input type="text" value="Type Something Here" class="ex3text" />
-    </div>
+      <div class="ex3">
+        <input type="checkbox" class="ex3checkbox" />
+        <input type="text" value="Type Something Here" class="ex3text" />
+        <div class="star">
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="pencil">
+          <i class="fa-solid fa-pencil"></i>
+        </div>
+      </div>
 
-    <div class="ex5">
-      <input type="checkbox" class="ex5checkbox" />
-      <input type="text" value="Type Something Here" class="ex5text" />
-    </div>
+      <div class="ex5">
+        <input type="checkbox" class="ex5checkbox" />
+        <input type="text" value="Type Something Here" class="ex5text" />
+
+        <div class="star">
+          <i class="fa-regular fa-star"></i>
+        </div>
+
+        <div class="pencil">
+          <i class="fa-solid fa-pencil"></i>
+        </div>
+      </div>
+    </form>
   </body>
 </html>
 
@@ -144,6 +173,11 @@
     margin-left: auto;
     margin-right: auto;
     padding: 20px 30px;
+  }
+
+  .herecheck {
+    width: 24px;
+    height: 24px;
   }
 
   .heretext {
@@ -228,6 +262,7 @@
     margin-left: auto;
     margin-right: auto;
     line-height: 102px;
+    padding-left: 30px;
   }
 
   .ex1checkbox {
@@ -249,6 +284,7 @@
     margin-right: auto;
     line-height: 102px;
     margin-bottom: 10px;
+    padding-left: 30px;
   }
 
   .ex3checkbox {
@@ -260,6 +296,7 @@
     border: none;
     font-size: 24px;
     background-color: #f2f2f2;
+    width: 248px;
   }
 
   .ex5 {
@@ -270,9 +307,31 @@
     margin-right: auto;
     font-size: 24px;
     line-height: 76px;
+    padding-left: 30px;
   }
 
-  ex5checkbox {
-    width: 620px;
+  .ex5checkbox {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ex5text {
+    border: none;
+    font-size: 24px;
+    background: #f2f2f2;
+  }
+
+  .star {
+    display: inline-block;
+    color: black;
+    margin-left: 160px;
+    font-size: large;
+  }
+
+  .pencil {
+    color: #00408b;
+    margin-left: 30px;
+    font-size: large;
+    display: inline-block;
   }
 </style>
