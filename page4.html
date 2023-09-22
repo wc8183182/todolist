@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -20,16 +23,21 @@
       </div>
     </form>
 
-    <div class="form2">
-      <form>
-        <input type="checkbox" checked class="checkbox1" />
-        <input
-          type="text"
-          class="form2text"
-          placeholder=" Type Something Here... "
-        />
-      </form>
-    </div>
+    <form class="form2">
+      <input type="checkbox" checked class="checkbox1" />
+      <input
+        type="text"
+        class="form2text"
+        placeholder=" Type Something Here... "
+      />
+      <div class="star">
+        <i class="far fa-star"></i>
+      </div>
+
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
+    </form>
   </body>
 </html>
 
@@ -106,16 +114,32 @@
   }
 
   .form2text {
-    border: none;
+    border: transparent;
     font-size: 24px;
     background: #f2f2f2;
     line-height: 65px;
+    width: 248px;
+
     text-decoration: line-through;
+    display: inline-block;
   }
 
   .checkbox1 {
     width: 24px;
     height: 24px;
+    margin-left: 25px;
+    margin-right: 5px;
+  }
+
+  .star {
+    display: inline-block;
+    margin-left: 160px;
+    font-size: large;
+  }
+
+  .pencil {
+    display: inline-block;
     margin-left: 30px;
+    font-size: large;
   }
 </style>

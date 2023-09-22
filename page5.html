@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -18,30 +21,91 @@
     <form class="onetext">
       <input type="text" class="addtask" placeholder="+ Add Task" />
     </form>
-
+    <p></p>
     <form class="ex1">
       <input type="checkbox" class="ex1checkbox" />
       <input type="text" class="ex1text" value="Type Something Here..." />
+
+      <div class="ex1star">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
+      <br />
+      <div class="ex1-1">
+        <i class="fa-solid fa-calendar-days"> 5/14</i>
+      </div>
+      <div class="ex1-2">
+        <i class="fa-regular fa-file"></i>
+      </div>
+
+      <div class="ex1-3">
+        <i class="fa-regular fa-comment-dots"></i>
+      </div>
     </form>
 
+    <p></p>
     <form class="ex1">
       <input type="checkbox" class="ex1checkbox" />
       <input type="text" class="ex1text" value="Type Something Here..." />
+      <div class="ex1star">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
+      <br />
+      <div class="ex1-1">
+        <i class="fa-regular fa-file"></i>
+      </div>
+      <div class="ex1-2">
+        <i class="fa-regular fa-comment-dots"></i>
+      </div>
     </form>
 
+    <p></p>
     <form class="ex2">
       <input type="checkbox" class="ex2checkbox" />
       <input type="text" class="ex2text" value="Type Something Here..." />
-    </form>
 
+      <div class="ex2star">
+        <i class="far fa-star"></i>
+      </div>
+
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
+      <div class="ex1-1">
+        <i class="fa-solid fa-calendar-days"> 6/18</i>
+      </div>
+    </form>
+    <p></p>
     <form class="ex2">
       <input type="checkbox" class="ex2checkbox" />
       <input type="text" class="ex2text" value="Type Something Here..." />
+      <div class="ex2star">
+        <i class="far fa-star"></i>
+      </div>
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
+      <br />
+      <div class="ex1-1">
+        <i class="fa-regular fa-file"></i>
+      </div>
     </form>
 
+    <p></p>
     <form class="ex3">
       <input type="checkbox" checked class="ex3checkbox" />
       <input type="text" class="ex3text" value="Type Something Here..." />
+      <div class="ex2star">
+        <i class="far fa-star"></i>
+      </div>
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
     </form>
   </body>
 </html>
@@ -111,60 +175,62 @@
     width: 620px;
     height: 102px;
     background: #fff2dc;
-    margin-top: 20px;
-    line-height: 102px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
   .ex1checkbox {
     width: 24px;
     height: 24px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 5px;
   }
 
   .ex1text {
     border: none;
     background-color: #fff2dc;
     font-size: 24px;
+    width: 248px;
+    height: 48px;
+    margin-top: 25px;
   }
 
   .ex2 {
     width: 620px;
     height: 102px;
     background: #f2f2f2;
-    margin-top: 20px;
-    line-height: 102px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
   .ex2checkbox {
     width: 24px;
     height: 24px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 5px;
   }
 
   .ex2text {
     border: none;
     background-color: #f2f2f2;
     font-size: 24px;
+    width: 248px;
+    height: 48px;
+    margin-top: 25px;
   }
 
   .ex3 {
     width: 620px;
     height: 76px;
     background: #f2f2f2;
-    margin-top: 20px;
-    line-height: 76px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
   .ex3checkbox {
     width: 24px;
     height: 24px;
-    margin-left: 20px;
+    margin-left: 25px;
+    margin-right: 5px;
   }
 
   .ex3text {
@@ -172,5 +238,42 @@
     background-color: #f2f2f2;
     font-size: 24px;
     text-decoration: line-through;
+    width: 248px;
+    height: 28px;
+    margin-top: 30px;
+  }
+
+  .ex1star {
+    display: inline-block;
+    color: #f5a623;
+    font-size: large;
+    margin-left: 160px;
+  }
+
+  .ex2star {
+    display: inline-block;
+    font-size: large;
+    margin-left: 160px;
+  }
+
+  .pencil {
+    display: inline-block;
+    font-size: large;
+    margin-left: 30px;
+  }
+
+  .ex1-1 {
+    display: inline-block;
+    margin-left: 50px;
+  }
+
+  .ex1-2 {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .ex1-3 {
+    display: inline-block;
+    margin-left: 10px;
   }
 </style>

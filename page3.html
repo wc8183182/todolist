@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+
   <body>
     <header>
       <div class="wapper">
         <ul>
-          <li>The Tasks</li>
+          <li>My Tasks</li>
           <li class="active">In Progress</li>
           <li>Completed</li>
         </ul>
@@ -18,32 +24,75 @@
       </div>
     </form>
 
-    <div class="ex1">
-      <form>
-        <input type="checkbox" class="ex1checkbox" />
-        <input type="text" value="Type Something Here.." class="ex1text" />
-      </form>
-    </div>
+    <form class="ex1">
+      <input type="checkbox" class="ex1checkbox" />
+      <input type="text" value="Type Something Here.." class="ex1text" />
 
-    <div class="ex1">
-      <form>
-        <input type="checkbox" class="ex1checkbox" />
-        <input type="text" value="Type Something Here.." class="ex1text" />
-      </form>
-    </div>
-    <div class="ex2">
-      <form>
-        <input type="checkbox" class="ex2checkbox" />
-        <input type="text" value="Type Something Here.." class="ex2text" />
-      </form>
-    </div>
+      <div class="ex1star">
+        <i class="fas fa-star"></i>
+      </div>
 
-    <div class="ex2">
-      <form>
-        <input type="checkbox" class="ex2checkbox" />
-        <input type="text" value="Type Something Here.." class="ex2text" />
-      </form>
-    </div>
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
+
+      <div class="ex1-1">
+        <i class="fa-solid fa-calendar-days"> 5/14</i>
+      </div>
+
+      <div class="ex1-2">
+        <i class="fa-regular fa-file"></i>
+      </div>
+    </form>
+
+    <form class="ex1">
+      <input type="checkbox" class="ex1checkbox" />
+      <input type="text" value="Type Something Here.." class="ex1text" />
+      <div class="ex1star">
+        <i class="fas fa-star"></i>
+      </div>
+
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
+      <br />
+      <div class="ex1-1">
+        <i class="fa-regular fa-file"></i>
+      </div>
+    </form>
+
+    <form class="ex2">
+      <input type="checkbox" class="ex2checkbox" />
+      <input type="text" value="Type Something Here.." class="ex2text" />
+
+      <div class="ex2star">
+        <i class="far fa-star"></i>
+      </div>
+
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
+
+      <div class="ex1-1">
+        <i class="fa-solid fa-calendar-days"> 6/18</i>
+      </div>
+    </form>
+
+    <form class="ex2">
+      <input type="checkbox" class="ex2checkbox" />
+      <input type="text" value="Type Something Here.." class="ex2text" />
+      <div class="ex2star">
+        <i class="far fa-star"></i>
+      </div>
+
+      <div class="pencil">
+        <i class="fa-solid fa-pencil"></i>
+      </div>
+      <br />
+      <div class="ex1-1">
+        <i class="fa-regular fa-file"></i>
+      </div>
+    </form>
   </body>
 </html>
 
@@ -119,10 +168,8 @@
     width: 620px;
     height: 102px;
     background: #fff2dc;
-    line-height: 102px;
     margin: 0 auto;
     margin-bottom: 10px;
-    /* padding-left: 20px; */
   }
 
   .ex1text {
@@ -132,6 +179,7 @@
     height: 48px;
     font-size: 24px;
     margin-top: 30px;
+    display: inline-block;
   }
 
   .ex1checkbox {
@@ -141,14 +189,32 @@
     margin-right: 5px;
   }
 
+  .ex1star {
+    color: #f5a623;
+    display: inline-block;
+    margin-left: 160px;
+    font-size: large;
+  }
+
+  .ex2star {
+    color: black;
+    display: inline-block;
+    margin-left: 160px;
+    font-size: large;
+  }
+
+  .pencil {
+    display: inline-block;
+    font-size: large;
+    margin-left: 30px;
+  }
+
   .ex2 {
     width: 620px;
     height: 102px;
     background: #f2f2f2;
-    line-height: 102px;
     margin: 0 auto;
     margin-bottom: 10px;
-    /* padding-left: 20px; */
   }
 
   .ex2text {
@@ -165,5 +231,15 @@
     height: 24px;
     margin-left: 25px;
     margin-right: 5px;
+  }
+
+  .ex1-1 {
+    display: inline-block;
+    margin-left: 50px;
+  }
+
+  .ex1-2 {
+    display: inline-block;
+    margin-left: 20px;
   }
 </style>
