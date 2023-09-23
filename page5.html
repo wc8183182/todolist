@@ -12,37 +12,49 @@
       <div class="wapper">
         <ul>
           <li class="active">My Tasks</li>
-          <li>In Progress</li>
-          <li>Completed</li>
+          <!-- <li>In Progress</li> -->
+          <li><a href="page3.html">In Progress</a></li>
+          <!-- <li>Completed</li> -->
+          <li><a href="page4.html">Completed</a></li>
         </ul>
       </div>
     </header>
 
     <form class="onetext">
-      <input type="text" class="addtask" placeholder="+ Add Task" />
+      <a href="page1.html">
+        <input type="text" class="addtask" placeholder="+ Add Task" />
+      </a>
     </form>
+
+    <!-- <form class="onetext">
+      <input type="text" class="addtask" placeholder="+ Add Task" />
+      <a href="page1.html"></a>
+    </form> -->
+
     <p></p>
     <form class="ex1">
-      <input type="checkbox" class="ex1checkbox" />
-      <input type="text" class="ex1text" value="Type Something Here..." />
+      <a href="page2.html">
+        <input type="checkbox" class="ex1checkbox" />
+        <input type="text" class="ex1text" value="Type Something Here..." />
 
-      <div class="ex1star">
-        <i class="fas fa-star"></i>
-      </div>
-      <div class="pencil">
-        <i class="fa-solid fa-pencil"></i>
-      </div>
-      <br />
-      <div class="ex1-1">
-        <i class="fa-solid fa-calendar-days"> 5/14</i>
-      </div>
-      <div class="ex1-2">
-        <i class="fa-regular fa-file"></i>
-      </div>
+        <div class="ex1star">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="pencil">
+          <i class="fa-solid fa-pencil"></i>
+        </div>
+        <br />
+        <div class="ex1-1">
+          <i class="fa-solid fa-calendar-days"> 5/14</i>
+        </div>
+        <div class="ex1-2">
+          <i class="fa-regular fa-file"></i>
+        </div>
 
-      <div class="ex1-3">
-        <i class="fa-regular fa-comment-dots"></i>
-      </div>
+        <div class="ex1-3">
+          <i class="fa-regular fa-comment-dots"></i>
+        </div>
+      </a>
     </form>
 
     <p></p>
@@ -81,19 +93,21 @@
       </div>
     </form>
     <p></p>
+
     <form class="ex2">
-      <input type="checkbox" class="ex2checkbox" />
-      <input type="text" class="ex2text" value="Type Something Here..." />
-      <div class="ex2star">
-        <i class="far fa-star"></i>
-      </div>
-      <div class="pencil">
-        <i class="fa-solid fa-pencil"></i>
-      </div>
-      <br />
-      <div class="ex1-1">
-        <i class="fa-regular fa-file"></i>
-      </div>
+      <a href="page1.html">
+        <input type="checkbox" class="ex2checkbox" />
+        <input type="text" class="ex2text" value="Type Something Here..." />
+        <div class="ex2star">
+          <i class="far fa-star"></i>
+        </div>
+        <div class="pencil">
+          <i class="fa-solid fa-pencil"></i>
+        </div>
+        <br />
+        <div class="ex1-1">
+          <i class="fa-regular fa-file"></i></div
+      ></a>
     </form>
 
     <p></p>
@@ -133,6 +147,7 @@
     line-height: 76px;
     width: 160px;
     text-align: center;
+    color: #00408b;
   }
 
   .wapper {
@@ -275,5 +290,10 @@
   .ex1-3 {
     display: inline-block;
     margin-left: 10px;
+  }
+  a {
+    text-decoration: none; /* 移除下劃線 */
+    color: inherit; /* 使用繼承的文字顏色 */
+    background-color: transparent; /* 背景設為透明 */
   }
 </style>

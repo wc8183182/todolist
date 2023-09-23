@@ -11,15 +11,19 @@
       <div class="wapper">
         <ul>
           <li class="active">My Tasks</li>
-          <li>In Progress</li>
-          <li>Completed</li>
+          <li><a href="page3.html">In Progress</a></li>
+          <!-- <li>In Progress</li> -->
+          <li><a href="page4.html">Completed</a></li>
+          <!-- <li>Completed</li> -->
         </ul>
       </div>
     </header>
 
     <form>
       <div class="addtext">
-        <input type="text" class="formtext" placeholder="+Add Task" />
+        <a href="page1.html">
+          <input type="text" class="formtext" placeholder="+Add Task" />
+        </a>
       </div>
     </form>
 
@@ -437,5 +441,11 @@
     display: inline-block;
     font-size: large;
     margin-left: 160px;
+  }
+
+  a {
+    text-decoration: none; /* 移除下劃線 */
+    color: inherit; /* 使用繼承的文字顏色 */
+    background-color: transparent; /* 背景設為透明 */
   }
 </style>

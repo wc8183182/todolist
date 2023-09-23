@@ -13,8 +13,10 @@
       <div class="wapper">
         <ul>
           <li class="active">My Tasks</li>
-          <li>In Progress</li>
-          <li>Completed</li>
+          <li><a href="page3.html">In Progress</a></li>
+          <!-- <li>In Progress</li> -->
+          <li><a href="page4.html">Completed</a></li>
+          <!-- <li>Completed</li> -->
         </ul>
       </div>
     </header>
@@ -61,32 +63,33 @@
 
     <div class="form-container">
       <button class="left">X Cancel</button
-      ><button class="right">+ Add task</button>
+      ><a href="page5.html"><button class="right">+ Add task</button> </a>
     </div>
     <p></p>
     <form class="ex1">
-      <input type="checkbox" class="ex1checkbox" />
-      <input type="text" value="Type Something Here" class="ex1text" />
+      <a href="page2.html">
+        <input type="checkbox" class="ex1checkbox" />
+        <input type="text" value="Type Something Here" class="ex1text" />
 
-      <div class="ex1star">
-        <i class="fas fa-star"></i>
-      </div>
+        <div class="ex1star">
+          <i class="fas fa-star"></i>
+        </div>
 
-      <div class="pencil">
-        <i class="fas fa-pencil"></i>
-      </div>
+        <div class="pencil">
+          <i class="fas fa-pencil"></i>
+        </div>
 
-      <div class="ex1-1">
-        <i class="fa-solid fa-calendar-days"> 5/14</i>
-      </div>
+        <div class="ex1-1">
+          <i class="fa-solid fa-calendar-days"> 5/14</i>
+        </div>
 
-      <div class="ex1-2">
-        <i class="fa-regular fa-file"></i>
-      </div>
+        <div class="ex1-2">
+          <i class="fa-regular fa-file"></i>
+        </div>
 
-      <div class="ex1-3">
-        <i class="fa-regular fa-comment-dots"></i>
-      </div>
+        <div class="ex1-3">
+          <i class="fa-regular fa-comment-dots"></i></div
+      ></a>
     </form>
 
     <p></p>
@@ -378,6 +381,9 @@
     margin-left: 10px;
   }
 
-  .star:hover {
+  a {
+    text-decoration: none; /* 移除下劃線 */
+    color: inherit; /* 使用繼承的文字顏色 */
+    background-color: transparent; /* 背景設為透明 */
   }
 </style>
