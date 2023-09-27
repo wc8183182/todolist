@@ -150,10 +150,6 @@
         margin: 0 auto;
       }
 
-      .hidden-form {
-        display: none;
-      }
-
       .ex1checkbox {
         width: 24px;
         height: 24px;
@@ -197,12 +193,20 @@
       .solid-star {
         color: #f5a623;
         display: inline-block;
+        width: 24px;
+        height: 23px;
         margin-left: 160px;
         font-size: large;
       }
 
       .pencil {
         color: #00408b;
+        margin-left: 30px;
+        font-size: large;
+        display: inline-block;
+      }
+      .solid-pencil {
+        color: black;
         margin-left: 30px;
         font-size: large;
         display: inline-block;
@@ -237,6 +241,8 @@
         color: inherit; /* 使用繼承的文字顏色 */
         background-color: transparent; /* 背景設為透明 */
       }
+
+      .
     </style>
   </head>
 
@@ -258,7 +264,7 @@
         <input type="checkbox" class="herecheck" />
         <input type="text" class="heretext" placeholder="Type Something Here" />
         <div class="star">
-          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
         </div>
 
         <div class="pencil"><i class="fas fa-pencil"></i></div>
@@ -299,8 +305,6 @@
     </div>
     <p></p>
 
-    <!-- 開始 -->
-
     <form class="ex1">
       <input type="checkbox" class="ex1checkbox" />
       <input type="text" value="Type Something Here" class="ex1text" />
@@ -326,65 +330,13 @@
       </div>
     </form>
 
-    <!-- 被隐藏的表单 -->
-
-    <form class="hidden-form" id="hiddenform">
-      <div class="here">
-        <input type="checkbox" class="herecheck" />
-        <input type="text" class="heretext" placeholder="Type Something Here" />
-        <div class="star">
-          <i class="fas fa-star"></i>
-        </div>
-
-        <div class="pencil">
-          <i class="fas fa-pencil" id="showFormButton"></i>
-        </div>
-      </div>
-
-      <div class="one">
-        <form>
-          <i class="fa-solid fa-calendar-days"></i>
-          <label for="Deadline">Deadline:</label><br />
-          <input type="date" />
-          <input type="text" class="onetext" placeholder="hh mm" />
-        </form>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-file"></i>
-          <label for="username">File : </label> <br />
-          <input type="file" name="檔案" />
-        </from>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-comment-dots"></i>
-          Comment :<br />
-          <textarea name="Comment" cols="10" rows="8">
-       Type your memo here....
-        </textarea
-          >
-        </from>
-      </div>
-
-      <div class="form-container">
-        <button class="left">X Cancel</button
-        ><button type="button" class="right" id="addtask">+ Add task</button>
-      </div>
-    </form>
-
-    <!-- 結束 -->
-    <!-- 範例結束 -->
-
     <p></p>
     <form class="ex1">
       <input type="checkbox" class="ex1checkbox" />
       <input type="text" value="Type Something Here" class="ex1text" />
 
       <div class="star">
-        <i class="fas fa-star"></i>
+        <i class="far fa-star" id="star"></i>
       </div>
 
       <div class="pencil">
@@ -407,7 +359,7 @@
       <input type="text" value="Type Something Here" class="ex1text" />
 
       <div class="star">
-        <i class="fas fa-star"></i>
+        <i class="far fa-star" id="star"></i>
       </div>
 
       <div class="pencil">
@@ -425,7 +377,7 @@
       <input type="text" value="Type Something Here" class="ex1text" />
 
       <div class="star">
-        <i class="fas fa-star"></i>
+        <i class="far fa-star" id="star"></i>
       </div>
 
       <div class="pencil">
@@ -443,7 +395,7 @@
       <input type="text" value="Type Something Here" class="ex2text" />
 
       <div class="star">
-        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
       </div>
 
       <div class="pencil">
@@ -465,15 +417,6 @@
       addbutton.addEventListener("click", function () {
         addbutton.classList.add("addtask");
         alert("新增成功");
-      });
-
-      // 获取要显示的表单和显示按钮
-      const hiddenForm = document.getElementById("hiddenForm");
-      const showFormButton = document.getElementById("showFormButton");
-
-      // 监听点击事件，点击按钮显示表单
-      showFormButton.addEventListener("click", () => {
-        hiddenForm.style.display = "block";
       });
     </script>
   </body>
