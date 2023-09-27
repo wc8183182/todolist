@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>page1</title>
+    <title>test2</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -310,7 +310,7 @@
       <input type="text" value="Type Something Here" class="ex1text" />
 
       <div class="star">
-        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
       </div>
 
       <div class="pencil">
@@ -404,16 +404,16 @@
     </form>
 
     <script>
-      var starIcon = document.querySelectorAll(".star");
-      starIcon.forEach(function (starIcon) {
+      var starIconList = document.querySelectorAll(".star");
+      starIconList.forEach(function (starIcon) {
         starIcon.addEventListener("click", function () {
-          starIcon.classList.toggle("star");
           starIcon.classList.toggle("solid-star");
+          starIcon.children[0].classList.toggle("fas");
         });
       });
 
       var addbutton = document.getElementById("addtask");
-      console.log(addbutton);
+      /* console.log(addbutton); */
       addbutton.addEventListener("click", function () {
         addbutton.classList.add("addtask");
         alert("新增成功");
