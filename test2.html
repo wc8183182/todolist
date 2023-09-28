@@ -242,6 +242,10 @@
         background-color: transparent; /* 背景設為透明 */
       }
 
+      .hidden-form {
+        display: none;
+      }
+
       .
     </style>
   </head>
@@ -305,6 +309,8 @@
     </div>
     <p></p>
 
+    <!-- start -->
+
     <form class="ex1">
       <input type="checkbox" class="ex1checkbox" />
       <input type="text" value="Type Something Here" class="ex1text" />
@@ -313,7 +319,7 @@
         <i class="far fa-star"></i>
       </div>
 
-      <div class="pencil">
+      <div class="pencil" id="showFormButton">
         <i class="fas fa-pencil"></i>
       </div>
 
@@ -329,6 +335,60 @@
         <i class="fa-regular fa-comment-dots"></i>
       </div>
     </form>
+    <!-- 要隱藏的地方 -->
+
+    <div class="hidden-form" id="hiddenform">
+      <form>
+        <div class="here">
+          <input type="checkbox" class="herecheck" />
+          <input
+            type="text"
+            class="heretext"
+            placeholder="Type Something Here"
+          />
+          <div class="star">
+            <i class="far fa-star"></i>
+          </div>
+
+          <div class="pencil"><i class="fas fa-pencil"></i></div>
+        </div>
+      </form>
+
+      <div class="one">
+        <form>
+          <i class="fa-solid fa-calendar-days"></i>
+          <label for="Deadline">Deadline:</label><br />
+          <input type="date" />
+          <input type="text" class="onetext" placeholder="hh mm" />
+        </form>
+
+        <p></p>
+
+        <from>
+          <i class="fa-regular fa-file"></i>
+          <label for="username">File : </label> <br />
+          <input type="file" name="檔案" />
+        </from>
+
+        <p></p>
+
+        <from>
+          <i class="fa-regular fa-comment-dots"></i>
+          Comment :<br />
+          <textarea name="Comment" cols="10" rows="8">
+ Type your memo here....
+         </textarea
+          >
+        </from>
+      </div>
+
+      <div class="form-container">
+        <button class="left">X Cancel</button
+        ><button type="button" class="right" id="addtask">+ Add task</button>
+      </div>
+      <p></p>
+    </div>
+    <!-- end -->
 
     <p></p>
     <form class="ex1">
@@ -404,6 +464,13 @@
     </form>
 
     <script>
+      var addbutton = document.getElementById("addtask");
+      /* console.log(addbutton); */
+      addbutton.addEventListener("click", function () {
+        addbutton.classList.add("addtask");
+        alert("新增成功");
+      });
+
       var starIconList = document.querySelectorAll(".star");
       starIconList.forEach(function (starIcon) {
         starIcon.addEventListener("click", function () {
@@ -412,11 +479,12 @@
         });
       });
 
-      var addbutton = document.getElementById("addtask");
-      /* console.log(addbutton); */
-      addbutton.addEventListener("click", function () {
-        addbutton.classList.add("addtask");
-        alert("新增成功");
+      var showFormButtonList = document.getElementById("showFormButton");
+      var hiddenForm = document.getElementById("hiddenform");
+
+      showFormButton.addEventListener("click", function () {
+        hiddenForm.style.display =
+          hiddenForm.style.display === "none" ? "block" : "none";
       });
     </script>
   </body>
