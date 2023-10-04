@@ -199,12 +199,20 @@
         font-size: large;
       }
 
+      .showFormButton {
+        color: #00408b;
+        margin-left: 30px;
+        font-size: large;
+        display: inline-block;
+      }
+
       .pencil {
         color: #00408b;
         margin-left: 30px;
         font-size: large;
         display: inline-block;
       }
+
       .solid-pencil {
         color: black;
         margin-left: 30px;
@@ -246,7 +254,20 @@
         display: none;
       }
 
-      .
+      .hidden-formfirst {
+        display: none;
+      }
+
+      .addtext {
+        text-align: center;
+      }
+
+      .formtext {
+        width: 620px;
+        height: 65px;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
     </style>
   </head>
 
@@ -263,51 +284,62 @@
       </div>
     </header>
 
-    <form>
-      <div class="here">
-        <input type="checkbox" class="herecheck" />
-        <input type="text" class="heretext" placeholder="Type Something Here" />
-        <div class="star">
-          <i class="far fa-star"></i>
-        </div>
+    <p></p>
 
-        <div class="pencil"><i class="fas fa-pencil"></i></div>
+    <form>
+      <div class="addtext">
+        <input type="text" class="formtext" placeholder="+ Add Task" />
       </div>
     </form>
-
-    <div class="one">
+    <!-- 要隱藏的地方 -->
+    <div class="hidden-formfirst">
       <form>
-        <i class="fa-solid fa-calendar-days"></i>
-        <label for="Deadline">Deadline:</label><br />
-        <input type="date" />
-        <input type="text" class="onetext" placeholder="hh mm" />
+        <div class="here">
+          <input type="checkbox" class="herecheck" />
+          <input
+            type="text"
+            class="heretext"
+            placeholder="Type Something Here"
+          />
+        </div>
       </form>
 
+      <div class="one">
+        <form>
+          <i class="fa-solid fa-calendar-days"></i>
+          <label for="Deadline">Deadline:</label><br />
+          <input type="date" />
+          <input type="text" class="onetext" placeholder="hh mm" />
+        </form>
+
+        <p></p>
+
+        <from>
+          <i class="fa-regular fa-file"></i>
+          <label for="username">File : </label> <br />
+          <input type="file" name="檔案" />
+        </from>
+
+        <p></p>
+
+        <from>
+          <i class="fa-regular fa-comment-dots"></i>
+          Comment :<br />
+          <textarea name="Comment" cols="10" rows="8">
+Type your memo here....
+ </textarea
+          >
+        </from>
+      </div>
+
+      <div class="form-container">
+        <button class="left">X Cancel</button
+        ><button type="button" class="right" id="addtask">+ Add task</button>
+      </div>
       <p></p>
-
-      <from>
-        <i class="fa-regular fa-file"></i>
-        <label for="username">File : </label> <br />
-        <input type="file" name="檔案" />
-      </from>
-
-      <p></p>
-
-      <from>
-        <i class="fa-regular fa-comment-dots"></i>
-        Comment :<br />
-        <textarea name="Comment" cols="10" rows="8">
- Type your memo here....
-         </textarea
-        >
-      </from>
     </div>
 
-    <div class="form-container">
-      <button class="left">X Cancel</button
-      ><button type="button" class="right" id="addtask">+ Add task</button>
-    </div>
-    <p></p>
+    <!-- end -->
 
     <!-- start -->
 
@@ -319,7 +351,7 @@
         <i class="far fa-star"></i>
       </div>
 
-      <div class="pencil" id="showFormButton">
+      <div class="showFormButton">
         <i class="fas fa-pencil"></i>
       </div>
 
@@ -335,8 +367,8 @@
         <i class="fa-regular fa-comment-dots"></i>
       </div>
     </form>
-    <!-- 要隱藏的地方 -->
 
+    <!-- 要隱藏的地方 -->
     <div class="hidden-form" id="hiddenform">
       <form>
         <div class="here">
@@ -346,11 +378,6 @@
             class="heretext"
             placeholder="Type Something Here"
           />
-          <div class="star">
-            <i class="far fa-star"></i>
-          </div>
-
-          <div class="pencil"><i class="fas fa-pencil"></i></div>
         </div>
       </form>
 
@@ -388,6 +415,7 @@
       </div>
       <p></p>
     </div>
+
     <!-- end -->
 
     <p></p>
@@ -399,7 +427,7 @@
         <i class="far fa-star" id="star"></i>
       </div>
 
-      <div class="pencil">
+      <div class="showFormButton">
         <i class="fas fa-pencil"></i>
       </div>
       <br />
@@ -413,6 +441,56 @@
       </div>
     </form>
 
+    <!-- 要隱藏的地方 -->
+    <div class="hidden-form" id="hiddenform">
+      <form>
+        <div class="here">
+          <input type="checkbox" class="herecheck" />
+          <input
+            type="text"
+            class="heretext"
+            placeholder="Type Something Here"
+          />
+        </div>
+      </form>
+
+      <div class="one">
+        <form>
+          <i class="fa-solid fa-calendar-days"></i>
+          <label for="Deadline">Deadline:</label><br />
+          <input type="date" />
+          <input type="text" class="onetext" placeholder="hh mm" />
+        </form>
+
+        <p></p>
+
+        <from>
+          <i class="fa-regular fa-file"></i>
+          <label for="username">File : </label> <br />
+          <input type="file" name="檔案" />
+        </from>
+
+        <p></p>
+
+        <from>
+          <i class="fa-regular fa-comment-dots"></i>
+          Comment :<br />
+          <textarea name="Comment" cols="10" rows="8">
+ Type your memo here....
+         </textarea
+          >
+        </from>
+      </div>
+
+      <div class="form-container">
+        <button class="left">X Cancel</button
+        ><button type="button" class="right" id="addtask">+ Add task</button>
+      </div>
+      <p></p>
+    </div>
+
+    <!-- end -->
+
     <p></p>
     <form class="ex1">
       <input type="checkbox" class="ex1checkbox" />
@@ -422,7 +500,7 @@
         <i class="far fa-star" id="star"></i>
       </div>
 
-      <div class="pencil">
+      <div class="showFormButton">
         <i class="fas fa-pencil"></i>
       </div>
 
@@ -431,6 +509,56 @@
       </div>
     </form>
 
+    <!-- 要隱藏的地方 -->
+    <div class="hidden-form" id="hiddenform">
+      <form>
+        <div class="here">
+          <input type="checkbox" class="herecheck" />
+          <input
+            type="text"
+            class="heretext"
+            placeholder="Type Something Here"
+          />
+        </div>
+      </form>
+
+      <div class="one">
+        <form>
+          <i class="fa-solid fa-calendar-days"></i>
+          <label for="Deadline">Deadline:</label><br />
+          <input type="date" />
+          <input type="text" class="onetext" placeholder="hh mm" />
+        </form>
+
+        <p></p>
+
+        <from>
+          <i class="fa-regular fa-file"></i>
+          <label for="username">File : </label> <br />
+          <input type="file" name="檔案" />
+        </from>
+
+        <p></p>
+
+        <from>
+          <i class="fa-regular fa-comment-dots"></i>
+          Comment :<br />
+          <textarea name="Comment" cols="10" rows="8">
+ Type your memo here....
+         </textarea
+          >
+        </from>
+      </div>
+
+      <div class="form-container">
+        <button class="left">X Cancel</button
+        ><button type="button" class="right" id="addtask">+ Add task</button>
+      </div>
+      <p></p>
+    </div>
+
+    <!-- end -->
+
     <p></p>
     <form class="ex1">
       <input type="checkbox" class="ex1checkbox" />
@@ -440,7 +568,7 @@
         <i class="far fa-star" id="star"></i>
       </div>
 
-      <div class="pencil">
+      <div class="showFormButton">
         <i class="fas fa-pencil"></i>
       </div>
       <br />
@@ -449,42 +577,169 @@
       </div>
     </form>
 
+    <!-- 要隱藏的地方 -->
+    <div class="hidden-form" id="hiddenform">
+      <form>
+        <div class="here">
+          <input type="checkbox" class="herecheck" />
+          <input
+            type="text"
+            class="heretext"
+            placeholder="Type Something Here"
+          />
+        </div>
+      </form>
+
+      <div class="one">
+        <form>
+          <i class="fa-solid fa-calendar-days"></i>
+          <label for="Deadline">Deadline:</label><br />
+          <input type="date" />
+          <input type="text" class="onetext" placeholder="hh mm" />
+        </form>
+
+        <p></p>
+
+        <from>
+          <i class="fa-regular fa-file"></i>
+          <label for="username">File : </label> <br />
+          <input type="file" name="檔案" />
+        </from>
+
+        <p></p>
+
+        <from>
+          <i class="fa-regular fa-comment-dots"></i>
+          Comment :<br />
+          <textarea name="Comment" cols="10" rows="8">
+ Type your memo here....
+         </textarea
+          >
+        </from>
+      </div>
+
+      <div class="form-container">
+        <button class="left">X Cancel</button
+        ><button type="button" class="right" id="addtask">+ Add task</button>
+      </div>
+      <p></p>
+    </div>
+
+    <!-- end -->
+
     <p></p>
     <form class="ex2">
-      <input type="checkbox" class="ex1checkbox" />
+      <input type="checkbox" class="ex1checkbox" checked />
       <input type="text" value="Type Something Here" class="ex2text" />
 
       <div class="star">
         <i class="far fa-star"></i>
       </div>
 
-      <div class="pencil">
+      <div class="showFormButton">
         <i class="fas fa-pencil"></i>
       </div>
     </form>
 
+    <!-- 要隱藏的地方 -->
+    <div class="hidden-form" id="hiddenform">
+      <form>
+        <div class="here">
+          <input type="checkbox" class="herecheck" />
+          <input
+            type="text"
+            class="heretext"
+            placeholder="Type Something Here"
+          />
+        </div>
+      </form>
+
+      <div class="one">
+        <form>
+          <i class="fa-solid fa-calendar-days"></i>
+          <label for="Deadline">Deadline:</label><br />
+          <input type="date" />
+          <input type="text" class="onetext" placeholder="hh mm" />
+        </form>
+
+        <p></p>
+
+        <from>
+          <i class="fa-regular fa-file"></i>
+          <label for="username">File : </label> <br />
+          <input type="file" name="檔案" />
+        </from>
+
+        <p></p>
+
+        <from>
+          <i class="fa-regular fa-comment-dots"></i>
+          Comment :<br />
+          <textarea name="Comment" cols="10" rows="8">
+Type your memo here....
+     </textarea
+          >
+        </from>
+      </div>
+
+      <div class="form-container">
+        <button class="left">X Cancel</button
+        ><button type="button" class="right" id="addtask">+ Add task</button>
+      </div>
+      <p></p>
+    </div>
+
+    <!-- end -->
+
     <script>
-      var addbutton = document.getElementById("addtask");
-      /* console.log(addbutton); */
-      addbutton.addEventListener("click", function () {
-        addbutton.classList.add("addtask");
-        alert("新增成功");
+      var addbutton = document.querySelectorAll(".right");
+      addbutton.forEach(function (right) {
+        right.addEventListener("click", function () {
+          alert("新增成功");
+        });
       });
 
       var starIconList = document.querySelectorAll(".star");
       starIconList.forEach(function (starIcon) {
         starIcon.addEventListener("click", function () {
           starIcon.classList.toggle("solid-star");
-          starIcon.children[0].classList.toggle("fas");
+          starIcon.children[0].classList.toggle(
+            "fas"
+          ); /*fas 他要去哪裡搜尋到fas*/
         });
       });
 
-      var showFormButtonList = document.getElementById("showFormButton");
-      var hiddenForm = document.getElementById("hiddenform");
+      var showFormButtonList = document.querySelectorAll(".showFormButton");
+      var hiddenFormList = document.querySelectorAll(".hidden-form");
+      console.log(showFormButtonList, hiddenFormList);
+      showFormButtonList.forEach(function (button, index) {
+        /*index 是甚麼*/ console.log(button, index);
+        button.addEventListener("click", function () {
+          // 切換相對應的 hidden-form 元素的可見性
+          console.log(button, index, hiddenFormList[index]);
+          hiddenFormList[index].style.display =
+            hiddenFormList[index].style.display == "none" ? "block" : "none";
+        });
+      });
+      /*上面的詳細*/
+      /*if (hiddenFormList[index].style.display == "none") {
+        hiddenFormList[index].style.display = "block";
+      } else {
+        hiddenFormList[index].style.display = "none";
+      }*/
 
-      showFormButton.addEventListener("click", function () {
-        hiddenForm.style.display =
-          hiddenForm.style.display === "none" ? "block" : "none";
+      var addtaskList = document.querySelectorAll(".addtext");
+      var hiddenFormfirstList = document.querySelectorAll(".hidden-formfirst");
+      addtaskList.forEach(function (button, index) {
+        /*index 是甚麼*/ console.log(button, index);
+        button.addEventListener("click", function () {
+          // 切換相對應的 hidden-form 元素的可見性
+          console.log(button, index, hiddenFormList[index]);
+          hiddenFormfirstList[index].style.display =
+            hiddenFormfirstList[index].style.display == "none"
+              ? "block"
+              : "none";
+        });
       });
     </script>
   </body>
