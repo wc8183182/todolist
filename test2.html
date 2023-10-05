@@ -1,746 +1,710 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>test2</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
 
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+<head>
+  <title>test2</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
-      body {
-        margin: 0;
-        background-color: #e1e1e1;
-      }
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-      header {
-        height: 76px;
-        background: #4a90e2;
-      }
+    body {
+      margin: 0;
+      background-color: #e1e1e1;
+    }
 
-      header ul {
-        margin: 0;
-        padding: 0;
-        font-size: 0;
-        list-style: none;
-      }
+    header {
+      height: 76px;
+      background: #4a90e2;
+    }
 
-      header ul li {
-        display: inline-block;
-        width: 160px;
-        height: 76px;
-        margin-right: 70px;
-        color: #00408b;
-        font-size: 24px;
-        line-height: 76px;
-        text-align: center;
-      }
+    header ul {
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      list-style: none;
+    }
 
-      header ul :last-child {
-        margin-right: 0;
-      }
+    header ul li {
+      display: inline-block;
+      width: 160px;
+      height: 76px;
+      margin-right: 70px;
+      color: #00408b;
+      font-size: 24px;
+      line-height: 76px;
+      text-align: center;
+    }
 
-      header ul li.active,
-      header ul li:hover {
-        color: #fff;
-        border-bottom: 5px solid #00408b;
-      }
+    header ul :last-child {
+      margin-right: 0;
+    }
 
-      .wapper {
-        width: 620px;
-        margin: 0 auto;
-      }
+    header ul li.active,
+    header ul li:hover {
+      color: #fff;
+      border-bottom: 5px solid #00408b;
+    }
 
-      .here {
-        width: 620px;
-        margin-top: 20px;
-        text-align: left;
-        background: #f2f2f2;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 20px 30px;
-      }
+    .wapper {
+      width: 620px;
+      margin: 0 auto;
+    }
 
-      .herecheck {
-        width: 24px;
-        height: 24px;
-      }
+    .here {
+      width: 620px;
+      margin-top: 20px;
+      text-align: left;
+      background: #f2f2f2;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px 30px;
+    }
 
-      .heretext {
-        background: #f2f2f2;
-        border: none;
-        font-size: 24px;
-        width: 248px;
-        height: 28px;
-      }
+    .herecheck {
+      width: 24px;
+      height: 24px;
+    }
 
-      .one {
-        width: 620px;
-        background: #f2f2f2;
-        margin-top: 3px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 20px;
-        padding: 10px 60px;
-        margin-bottom: 0;
-      }
+    .heretext {
+      background: #f2f2f2;
+      border: none;
+      font-size: 24px;
+      width: 248px;
+      height: 28px;
+    }
 
-      input[type="date"] {
-        width: 162px;
-        height: 35px;
-      }
+    .one {
+      width: 620px;
+      background: #f2f2f2;
+      margin-top: 3px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 20px;
+      padding: 10px 60px;
+      margin-bottom: 0;
+    }
 
-      .onetext {
-        width: 162px;
-        height: 35px;
-      }
+    input[type="date"] {
+      width: 162px;
+      height: 35px;
+    }
 
-      textarea {
-        width: 413px;
-        height: 104px;
-      }
+    .onetext {
+      width: 162px;
+      height: 35px;
+    }
 
-      .form-container {
-        width: 620px;
-        height: 60px;
-        margin: 0 auto;
-      }
+    textarea {
+      width: 413px;
+      height: 104px;
+    }
 
-      .form-container:hover {
-        background: #4a90e2;
-      }
+    .form-container {
+      width: 620px;
+      height: 60px;
+      margin: 0 auto;
+    }
 
-      .left {
-        background-color: transparent;
-        border-color: transparent;
-        width: 310px;
-        height: 60px;
-        color: red;
-        font-size: 24px;
-        background: #fff;
-      }
+    .form-container:hover {
+      background: #4a90e2;
+    }
 
-      .left:hover {
-        background: #4a90e2;
-        color: #fff;
-      }
-      .right {
-        background: transparent;
-        border-color: transparent;
-        width: 310px;
-        height: 60px;
-        color: #ffffff;
-        background-color: #4a90e2;
-        font-size: 24px;
-      }
+    .left {
+      background-color: transparent;
+      border-color: transparent;
+      width: 310px;
+      height: 60px;
+      color: red;
+      font-size: 24px;
+      background: #fff;
+    }
 
-      .time {
-        font-size: 16px;
-        color: #757575;
-      }
+    .left:hover {
+      background: #4a90e2;
+      color: #fff;
+    }
 
-      .ex1 {
-        background: #fff2dc;
-        width: 620px;
-        height: 102px;
-        margin: 0 auto;
-      }
+    .right {
+      background: transparent;
+      border-color: transparent;
+      width: 310px;
+      height: 60px;
+      color: #ffffff;
+      background-color: #4a90e2;
+      font-size: 24px;
+    }
 
-      .ex1checkbox {
-        width: 24px;
-        height: 24px;
-        margin-left: 25px;
-        margin-right: 5px;
-      }
+    .time {
+      font-size: 16px;
+      color: #757575;
+    }
 
-      .ex1text {
-        font-size: 24px;
-        background-color: #fff2dc;
-        width: 248px;
-        height: 48px;
-        border: transparent;
-        margin-top: 30px;
-      }
+    .ex1 {
+      background: #fff2dc;
+      width: 620px;
+      height: 102px;
+      margin: 0 auto;
+    }
 
-      .ex2text {
-        border: none;
-        font-size: 24px;
-        height: 48px;
-        width: 248px;
-        margin-top: 20px;
-        background: #fff2dc;
-        text-decoration: line-through;
-      }
+    .ex1checkbox {
+      width: 24px;
+      height: 24px;
+      margin-left: 25px;
+      margin-right: 5px;
+    }
 
-      .ex2 {
-        background: #fff2dc;
-        width: 620px;
-        height: 76px;
-        margin: 0 auto;
-      }
+    .ex1text {
+      font-size: 24px;
+      background-color: #fff2dc;
+      width: 248px;
+      height: 48px;
+      border: transparent;
+      margin-top: 30px;
+    }
 
-      .star {
-        display: inline-block;
-        color: black;
-        margin-left: 160px;
-        font-size: large;
-      }
+    .ex2text {
+      border: none;
+      font-size: 24px;
+      height: 48px;
+      width: 248px;
+      margin-top: 20px;
+      background: #fff2dc;
+      text-decoration: line-through;
+    }
 
-      .solid-star {
-        color: #f5a623;
-        display: inline-block;
-        width: 24px;
-        height: 23px;
-        margin-left: 160px;
-        font-size: large;
-      }
+    .ex2 {
+      background: #fff2dc;
+      width: 620px;
+      height: 76px;
+      margin: 0 auto;
+    }
 
-      .showFormButton {
-        color: #00408b;
-        margin-left: 30px;
-        font-size: large;
-        display: inline-block;
-      }
+    .star {
+      display: inline-block;
+      color: black;
+      margin-left: 160px;
+      font-size: large;
+    }
 
-      .pencil {
-        color: #00408b;
-        margin-left: 30px;
-        font-size: large;
-        display: inline-block;
-      }
+    .solid-star {
+      color: #f5a623;
+      display: inline-block;
+      width: 24px;
+      height: 23px;
+      margin-left: 160px;
+      font-size: large;
+    }
 
-      .solid-pencil {
-        color: black;
-        margin-left: 30px;
-        font-size: large;
-        display: inline-block;
-      }
+    .showFormButton {
+      color: #00408b;
+      margin-left: 30px;
+      font-size: large;
+      display: inline-block;
+    }
 
-      .ex1star {
-        color: #f5a623;
-        display: inline-block;
-        width: 24px;
-        height: 23px;
-        margin-left: 160px;
-        font-size: large;
-      }
+    .pencil {
+      color: #00408b;
+      margin-left: 30px;
+      font-size: large;
+      display: inline-block;
+    }
 
-      .ex1-1 {
-        display: inline-block;
-        margin-left: 50px;
-      }
+    .solid-pencil {
+      color: black;
+      margin-left: 30px;
+      font-size: large;
+      display: inline-block;
+    }
 
-      .ex1-2 {
-        display: inline-block;
-        margin-left: 10px;
-      }
+    .ex1star {
+      color: #f5a623;
+      display: inline-block;
+      width: 24px;
+      height: 23px;
+      margin-left: 160px;
+      font-size: large;
+    }
 
-      .ex1-3 {
-        display: inline-block;
-        margin-left: 10px;
-      }
+    .ex1-1 {
+      display: inline-block;
+      margin-left: 50px;
+    }
 
-      a {
-        text-decoration: none; /* 移除下劃線 */
-        color: inherit; /* 使用繼承的文字顏色 */
-        background-color: transparent; /* 背景設為透明 */
-      }
+    .ex1-2 {
+      display: inline-block;
+      margin-left: 10px;
+    }
 
-      .hidden-form {
-        display: none;
-      }
+    .ex1-3 {
+      display: inline-block;
+      margin-left: 10px;
+    }
 
-      .hidden-formfirst {
-        display: none;
-      }
+    a {
+      text-decoration: none;
+      /* 移除下劃線 */
+      color: inherit;
+      /* 使用繼承的文字顏色 */
+      background-color: transparent;
+      /* 背景設為透明 */
+    }
 
-      .addtext {
-        text-align: center;
-      }
+    .hidden-form {
+      display: none;
+    }
 
-      .formtext {
-        width: 620px;
-        height: 65px;
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
-    </style>
-  </head>
+    .hidden-formfirst {
+      display: none;
+    }
 
-  <body>
-    <header>
-      <div class="wapper">
-        <ul>
-          <li class="active">My Tasks</li>
-          <li><a href="page3.html">In Progress</a></li>
-          <!-- <li>In Progress</li> -->
-          <li><a href="page4.html">Completed</a></li>
-          <!-- <li>Completed</li> -->
-        </ul>
-      </div>
-    </header>
+    .addtext {
+      text-align: center;
+    }
 
-    <p></p>
+    .formtext {
+      width: 620px;
+      height: 65px;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
 
+<body>
+  <header>
+    <div class="wapper">
+      <ul>
+        <li class="active">My Tasks</li>
+        <li><a href="page3.html">In Progress</a></li>
+        <!-- <li>In Progress</li> -->
+        <li><a href="page4.html">Completed</a></li>
+        <!-- <li>Completed</li> -->
+      </ul>
+    </div>
+  </header>
+
+  <p></p>
+
+  <form>
+    <div class="addtext">
+      <input type="text" class="formtext" placeholder="+ Add Task" />
+    </div>
+  </form>
+  <!-- 要隱藏的地方 -->
+  <div class="hidden-formfirst">
     <form>
-      <div class="addtext">
-        <input type="text" class="formtext" placeholder="+ Add Task" />
+      <div class="here">
+        <input type="checkbox" class="herecheck" />
+        <input type="text" class="heretext" placeholder="Type Something Here" />
       </div>
     </form>
-    <!-- 要隱藏的地方 -->
-    <div class="hidden-formfirst">
+
+    <div class="one">
       <form>
-        <div class="here">
-          <input type="checkbox" class="herecheck" />
-          <input
-            type="text"
-            class="heretext"
-            placeholder="Type Something Here"
-          />
-        </div>
+        <i class="fa-solid fa-calendar-days"></i>
+        <label for="Deadline">Deadline:</label><br />
+        <input type="date" />
+        <input type="text" class="onetext" placeholder="hh mm" />
       </form>
 
-      <div class="one">
-        <form>
-          <i class="fa-solid fa-calendar-days"></i>
-          <label for="Deadline">Deadline:</label><br />
-          <input type="date" />
-          <input type="text" class="onetext" placeholder="hh mm" />
-        </form>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-file"></i>
-          <label for="username">File : </label> <br />
-          <input type="file" name="檔案" />
-        </from>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-comment-dots"></i>
-          Comment :<br />
-          <textarea name="Comment" cols="10" rows="8">
-Type your memo here....
- </textarea
-          >
-        </from>
-      </div>
-
-      <div class="form-container">
-        <button class="left">X Cancel</button
-        ><button type="button" class="right" id="addtask">+ Add task</button>
-      </div>
       <p></p>
-    </div>
 
-    <!-- end -->
-
-    <!-- start -->
-
-    <form class="ex1">
-      <input type="checkbox" class="ex1checkbox" />
-      <input type="text" value="Type Something Here" class="ex1text" />
-
-      <div class="star">
-        <i class="far fa-star"></i>
-      </div>
-
-      <div class="showFormButton">
-        <i class="fas fa-pencil"></i>
-      </div>
-
-      <div class="ex1-1">
-        <i class="fa-solid fa-calendar-days"> 5/14</i>
-      </div>
-
-      <div class="ex1-2">
+      <from>
         <i class="fa-regular fa-file"></i>
-      </div>
+        <label for="username">File : </label> <br />
+        <input type="file" name="檔案" />
+      </from>
 
-      <div class="ex1-3">
+      <p></p>
+
+      <from>
         <i class="fa-regular fa-comment-dots"></i>
-      </div>
-    </form>
-
-    <!-- 要隱藏的地方 -->
-    <div class="hidden-form" id="hiddenform">
-      <form>
-        <div class="here">
-          <input type="checkbox" class="herecheck" />
-          <input
-            type="text"
-            class="heretext"
-            placeholder="Type Something Here"
-          />
-        </div>
-      </form>
-
-      <div class="one">
-        <form>
-          <i class="fa-solid fa-calendar-days"></i>
-          <label for="Deadline">Deadline:</label><br />
-          <input type="date" />
-          <input type="text" class="onetext" placeholder="hh mm" />
-        </form>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-file"></i>
-          <label for="username">File : </label> <br />
-          <input type="file" name="檔案" />
-        </from>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-comment-dots"></i>
-          Comment :<br />
-          <textarea name="Comment" cols="10" rows="8">
- Type your memo here....
-         </textarea
-          >
-        </from>
-      </div>
-
-      <div class="form-container">
-        <button class="left">X Cancel</button
-        ><button type="button" class="right" id="addtask">+ Add task</button>
-      </div>
-      <p></p>
-    </div>
-
-    <!-- end -->
-
-    <p></p>
-    <form class="ex1">
-      <input type="checkbox" class="ex1checkbox" />
-      <input type="text" value="Type Something Here" class="ex1text" />
-
-      <div class="star">
-        <i class="far fa-star" id="star"></i>
-      </div>
-
-      <div class="showFormButton">
-        <i class="fas fa-pencil"></i>
-      </div>
-      <br />
-
-      <div class="ex1-1">
-        <i class="fa-regular fa-file"></i>
-      </div>
-
-      <div class="ex1-3">
-        <i class="fa-regular fa-comment-dots"></i>
-      </div>
-    </form>
-
-    <!-- 要隱藏的地方 -->
-    <div class="hidden-form" id="hiddenform">
-      <form>
-        <div class="here">
-          <input type="checkbox" class="herecheck" />
-          <input
-            type="text"
-            class="heretext"
-            placeholder="Type Something Here"
-          />
-        </div>
-      </form>
-
-      <div class="one">
-        <form>
-          <i class="fa-solid fa-calendar-days"></i>
-          <label for="Deadline">Deadline:</label><br />
-          <input type="date" />
-          <input type="text" class="onetext" placeholder="hh mm" />
-        </form>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-file"></i>
-          <label for="username">File : </label> <br />
-          <input type="file" name="檔案" />
-        </from>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-comment-dots"></i>
-          Comment :<br />
-          <textarea name="Comment" cols="10" rows="8">
- Type your memo here....
-         </textarea
-          >
-        </from>
-      </div>
-
-      <div class="form-container">
-        <button class="left">X Cancel</button
-        ><button type="button" class="right" id="addtask">+ Add task</button>
-      </div>
-      <p></p>
-    </div>
-
-    <!-- end -->
-
-    <p></p>
-    <form class="ex1">
-      <input type="checkbox" class="ex1checkbox" />
-      <input type="text" value="Type Something Here" class="ex1text" />
-
-      <div class="star">
-        <i class="far fa-star" id="star"></i>
-      </div>
-
-      <div class="showFormButton">
-        <i class="fas fa-pencil"></i>
-      </div>
-
-      <div class="ex1-1">
-        <i class="fa-solid fa-calendar-days"> 2019/06/18</i>
-      </div>
-    </form>
-
-    <!-- 要隱藏的地方 -->
-    <div class="hidden-form" id="hiddenform">
-      <form>
-        <div class="here">
-          <input type="checkbox" class="herecheck" />
-          <input
-            type="text"
-            class="heretext"
-            placeholder="Type Something Here"
-          />
-        </div>
-      </form>
-
-      <div class="one">
-        <form>
-          <i class="fa-solid fa-calendar-days"></i>
-          <label for="Deadline">Deadline:</label><br />
-          <input type="date" />
-          <input type="text" class="onetext" placeholder="hh mm" />
-        </form>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-file"></i>
-          <label for="username">File : </label> <br />
-          <input type="file" name="檔案" />
-        </from>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-comment-dots"></i>
-          Comment :<br />
-          <textarea name="Comment" cols="10" rows="8">
- Type your memo here....
-         </textarea
-          >
-        </from>
-      </div>
-
-      <div class="form-container">
-        <button class="left">X Cancel</button
-        ><button type="button" class="right" id="addtask">+ Add task</button>
-      </div>
-      <p></p>
-    </div>
-
-    <!-- end -->
-
-    <p></p>
-    <form class="ex1">
-      <input type="checkbox" class="ex1checkbox" />
-      <input type="text" value="Type Something Here" class="ex1text" />
-
-      <div class="star">
-        <i class="far fa-star" id="star"></i>
-      </div>
-
-      <div class="showFormButton">
-        <i class="fas fa-pencil"></i>
-      </div>
-      <br />
-      <div class="ex1-1">
-        <i class="fa-regular fa-file"></i>
-      </div>
-    </form>
-
-    <!-- 要隱藏的地方 -->
-    <div class="hidden-form" id="hiddenform">
-      <form>
-        <div class="here">
-          <input type="checkbox" class="herecheck" />
-          <input
-            type="text"
-            class="heretext"
-            placeholder="Type Something Here"
-          />
-        </div>
-      </form>
-
-      <div class="one">
-        <form>
-          <i class="fa-solid fa-calendar-days"></i>
-          <label for="Deadline">Deadline:</label><br />
-          <input type="date" />
-          <input type="text" class="onetext" placeholder="hh mm" />
-        </form>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-file"></i>
-          <label for="username">File : </label> <br />
-          <input type="file" name="檔案" />
-        </from>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-comment-dots"></i>
-          Comment :<br />
-          <textarea name="Comment" cols="10" rows="8">
- Type your memo here....
-         </textarea
-          >
-        </from>
-      </div>
-
-      <div class="form-container">
-        <button class="left">X Cancel</button
-        ><button type="button" class="right" id="addtask">+ Add task</button>
-      </div>
-      <p></p>
-    </div>
-
-    <!-- end -->
-
-    <p></p>
-    <form class="ex2">
-      <input type="checkbox" class="ex1checkbox" checked />
-      <input type="text" value="Type Something Here" class="ex2text" />
-
-      <div class="star">
-        <i class="far fa-star"></i>
-      </div>
-
-      <div class="showFormButton">
-        <i class="fas fa-pencil"></i>
-      </div>
-    </form>
-
-    <!-- 要隱藏的地方 -->
-    <div class="hidden-form" id="hiddenform">
-      <form>
-        <div class="here">
-          <input type="checkbox" class="herecheck" />
-          <input
-            type="text"
-            class="heretext"
-            placeholder="Type Something Here"
-          />
-        </div>
-      </form>
-
-      <div class="one">
-        <form>
-          <i class="fa-solid fa-calendar-days"></i>
-          <label for="Deadline">Deadline:</label><br />
-          <input type="date" />
-          <input type="text" class="onetext" placeholder="hh mm" />
-        </form>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-file"></i>
-          <label for="username">File : </label> <br />
-          <input type="file" name="檔案" />
-        </from>
-
-        <p></p>
-
-        <from>
-          <i class="fa-regular fa-comment-dots"></i>
-          Comment :<br />
-          <textarea name="Comment" cols="10" rows="8">
+        Comment :<br />
+        <textarea name="Comment" cols="10" rows="8">
 Type your memo here....
-     </textarea
-          >
-        </from>
-      </div>
-
-      <div class="form-container">
-        <button class="left">X Cancel</button
-        ><button type="button" class="right" id="addtask">+ Add task</button>
-      </div>
-      <p></p>
+ </textarea>
+      </from>
     </div>
 
-    <!-- end -->
+    <div class="form-container">
+      <button class="left">X Cancel</button><button type="button" class="right" id="addtask">+ Add task</button>
+    </div>
+    <p></p>
+  </div>
 
-    <script>
-      var addbutton = document.querySelectorAll(".right");
-      addbutton.forEach(function (right) {
-        right.addEventListener("click", function () {
-          alert("新增成功");
-        });
-      });
+  <!-- end -->
 
-      var starIconList = document.querySelectorAll(".star");
-      starIconList.forEach(function (starIcon) {
-        starIcon.addEventListener("click", function () {
-          starIcon.classList.toggle("solid-star");
-          starIcon.children[0].classList.toggle(
-            "fas"
-          ); /*fas 他要去哪裡搜尋到fas*/
-        });
-      });
+  <!-- start -->
 
-      var showFormButtonList = document.querySelectorAll(".showFormButton");
-      var hiddenFormList = document.querySelectorAll(".hidden-form");
-      console.log(showFormButtonList, hiddenFormList);
-      showFormButtonList.forEach(function (button, index) {
-        /*index 是甚麼*/ console.log(button, index);
-        button.addEventListener("click", function () {
-          // 切換相對應的 hidden-form 元素的可見性
-          console.log(button, index, hiddenFormList[index]);
-          hiddenFormList[index].style.display =
-            hiddenFormList[index].style.display == "none" ? "block" : "none";
-        });
-      });
-      /*上面的詳細*/
-      /*if (hiddenFormList[index].style.display == "none") {
-        hiddenFormList[index].style.display = "block";
-      } else {
-        hiddenFormList[index].style.display = "none";
-      }*/
+  <form class="ex1">
+    <input type="checkbox" class="ex1checkbox" />
+    <input type="text" value="Type Something Here" class="ex1text" />
 
-      var addtaskList = document.querySelectorAll(".addtext");
-      var hiddenFormfirstList = document.querySelectorAll(".hidden-formfirst");
-      addtaskList.forEach(function (button, index) {
-        /*index 是甚麼*/ console.log(button, index);
-        button.addEventListener("click", function () {
-          // 切換相對應的 hidden-form 元素的可見性
-          console.log(button, index, hiddenFormList[index]);
-          hiddenFormfirstList[index].style.display =
-            hiddenFormfirstList[index].style.display == "none"
-              ? "block"
-              : "none";
-        });
+    <div class="star">
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="showFormButton">
+      <i class="fas fa-pencil"></i>
+    </div>
+
+    <div class="ex1-1">
+      <i class="fa-solid fa-calendar-days"> 5/14</i>
+    </div>
+
+    <div class="ex1-2">
+      <i class="fa-regular fa-file"></i>
+    </div>
+
+    <div class="ex1-3">
+      <i class="fa-regular fa-comment-dots"></i>
+    </div>
+  </form>
+
+  <!-- 要隱藏的地方 -->
+  <div class="hidden-form" id="hiddenform">
+    <form>
+      <div class="here">
+        <input type="checkbox" class="herecheck" />
+        <input type="text" class="heretext" placeholder="Type Something Here" />
+      </div>
+    </form>
+
+    <div class="one">
+      <form>
+        <i class="fa-solid fa-calendar-days"></i>
+        <label for="Deadline">Deadline:</label><br />
+        <input type="date" />
+        <input type="text" class="onetext" placeholder="hh mm" />
+      </form>
+
+      <p></p>
+
+      <from>
+        <i class="fa-regular fa-file"></i>
+        <label for="username">File : </label> <br />
+        <input type="file" name="檔案" />
+      </from>
+
+      <p></p>
+
+      <from>
+        <i class="fa-regular fa-comment-dots"></i>
+        Comment :<br />
+        <textarea name="Comment" cols="10" rows="8">
+ Type your memo here....
+         </textarea>
+      </from>
+    </div>
+
+    <div class="form-container">
+      <button class="left">X Cancel</button><button type="button" class="right" id="addtask">+ Add task</button>
+    </div>
+    <p></p>
+  </div>
+
+  <!-- end -->
+
+  <p></p>
+  <form class="ex1">
+    <input type="checkbox" class="ex1checkbox" />
+    <input type="text" value="Type Something Here" class="ex1text" />
+
+    <div class="star">
+      <i class="far fa-star" id="star"></i>
+    </div>
+
+    <div class="showFormButton">
+      <i class="fas fa-pencil"></i>
+    </div>
+    <br />
+
+    <div class="ex1-1">
+      <i class="fa-regular fa-file"></i>
+    </div>
+
+    <div class="ex1-3">
+      <i class="fa-regular fa-comment-dots"></i>
+    </div>
+  </form>
+
+  <!-- 要隱藏的地方 -->
+  <div class="hidden-form" id="hiddenform">
+    <form>
+      <div class="here">
+        <input type="checkbox" class="herecheck" />
+        <input type="text" class="heretext" placeholder="Type Something Here" />
+      </div>
+    </form>
+
+    <div class="one">
+      <form>
+        <i class="fa-solid fa-calendar-days"></i>
+        <label for="Deadline">Deadline:</label><br />
+        <input type="date" />
+        <input type="text" class="onetext" placeholder="hh mm" />
+      </form>
+
+      <p></p>
+
+      <from>
+        <i class="fa-regular fa-file"></i>
+        <label for="username">File : </label> <br />
+        <input type="file" name="檔案" />
+      </from>
+
+      <p></p>
+
+      <from>
+        <i class="fa-regular fa-comment-dots"></i>
+        Comment :<br />
+        <textarea name="Comment" cols="10" rows="8">
+ Type your memo here....
+         </textarea>
+      </from>
+    </div>
+
+    <div class="form-container">
+      <button class="left">X Cancel</button><button type="button" class="right" id="addtask">+ Add task</button>
+    </div>
+    <p></p>
+  </div>
+
+  <!-- end -->
+
+  <p></p>
+  <form class="ex1">
+    <input type="checkbox" class="ex1checkbox" />
+    <input type="text" value="Type Something Here" class="ex1text" />
+
+    <div class="star">
+      <i class="far fa-star" id="star"></i>
+    </div>
+
+    <div class="showFormButton">
+      <i class="fas fa-pencil"></i>
+    </div>
+
+    <div class="ex1-1">
+      <i class="fa-solid fa-calendar-days"> 2019/06/18</i>
+    </div>
+  </form>
+
+  <!-- 要隱藏的地方 -->
+  <div class="hidden-form" id="hiddenform">
+    <form>
+      <div class="here">
+        <input type="checkbox" class="herecheck" />
+        <input type="text" class="heretext" placeholder="Type Something Here" />
+      </div>
+    </form>
+
+    <div class="one">
+      <form>
+        <i class="fa-solid fa-calendar-days"></i>
+        <label for="Deadline">Deadline:</label><br />
+        <input type="date" />
+        <input type="text" class="onetext" placeholder="hh mm" />
+      </form>
+
+      <p></p>
+
+      <from>
+        <i class="fa-regular fa-file"></i>
+        <label for="username">File : </label> <br />
+        <input type="file" name="檔案" />
+      </from>
+
+      <p></p>
+
+      <from>
+        <i class="fa-regular fa-comment-dots"></i>
+        Comment :<br />
+        <textarea name="Comment" cols="10" rows="8">
+ Type your memo here....
+         </textarea>
+      </from>
+    </div>
+
+    <div class="form-container">
+      <button class="left">X Cancel</button><button type="button" class="right" id="addtask">+ Add task</button>
+    </div>
+    <p></p>
+  </div>
+
+  <!-- end -->
+
+  <p></p>
+  <form class="ex1">
+    <input type="checkbox" class="ex1checkbox" />
+    <input type="text" value="Type Something Here" class="ex1text" />
+
+    <div class="star">
+      <i class="far fa-star" id="star"></i>
+    </div>
+
+    <div class="showFormButton">
+      <i class="fas fa-pencil"></i>
+    </div>
+    <br />
+    <div class="ex1-1">
+      <i class="fa-regular fa-file"></i>
+    </div>
+  </form>
+
+  <!-- 要隱藏的地方 -->
+  <div class="hidden-form" id="hiddenform">
+    <form>
+      <div class="here">
+        <input type="checkbox" class="herecheck" />
+        <input type="text" class="heretext" placeholder="Type Something Here" />
+      </div>
+    </form>
+
+    <div class="one">
+      <form>
+        <i class="fa-solid fa-calendar-days"></i>
+        <label for="Deadline">Deadline:</label><br />
+        <input type="date" />
+        <input type="text" class="onetext" placeholder="hh mm" />
+      </form>
+
+      <p></p>
+
+      <from>
+        <i class="fa-regular fa-file"></i>
+        <label for="username">File : </label> <br />
+        <input type="file" name="檔案" />
+      </from>
+
+      <p></p>
+
+      <from>
+        <i class="fa-regular fa-comment-dots"></i>
+        Comment :<br />
+        <textarea name="Comment" cols="10" rows="8">
+ Type your memo here....
+         </textarea>
+      </from>
+    </div>
+
+    <div class="form-container">
+      <button class="left">X Cancel</button><button type="button" class="right" id="addtask">+ Add task</button>
+    </div>
+    <p></p>
+  </div>
+
+  <!-- end -->
+
+  <p></p>
+  <form class="ex2">
+    <input type="checkbox" class="ex1checkbox" checked />
+    <input type="text" value="Type Something Here" class="ex2text" />
+
+    <div class="star">
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="showFormButton">
+      <i class="fas fa-pencil"></i>
+    </div>
+  </form>
+
+  <!-- 要隱藏的地方 -->
+  <div class="hidden-form" id="hiddenform">
+    <form>
+      <div class="here">
+        <input type="checkbox" class="herecheck" />
+        <input type="text" class="heretext" placeholder="Type Something Here" />
+      </div>
+    </form>
+
+    <div class="one">
+      <form>
+        <i class="fa-solid fa-calendar-days"></i>
+        <label for="Deadline">Deadline:</label><br />
+        <input type="date" />
+        <input type="text" class="onetext" placeholder="hh mm" />
+      </form>
+
+      <p></p>
+
+      <from>
+        <i class="fa-regular fa-file"></i>
+        <label for="username">File : </label> <br />
+        <input type="file" name="檔案" />
+      </from>
+
+      <p></p>
+
+      <form>
+        <i class="fa-regular fa-comment-dots"></i>
+        Comment :<br />
+        <textarea name="Comment" cols="10" rows="8">
+Type your memo here....
+     </textarea>
+      </form>
+    </div>
+
+    <div class="form-container">
+      <button class="left">X Cancel</button><button type="button" class="right" id="addtask">+ Add task</button>
+    </div>
+    <p></p>
+  </div>
+
+  <!-- end -->
+
+  <script>
+    var addbutton = document.querySelectorAll(".right");
+    addbutton.forEach(function (right) {
+      right.addEventListener("click", function () {
+        alert("新增成功");
       });
-    </script>
-  </body>
+    });
+
+    var starIconList = document.querySelectorAll(".star");
+    starIconList.forEach(function (starIcon) {
+      starIcon.addEventListener("click", function () {
+        starIcon.classList.toggle("solid-star");
+        starIcon.children[0].classList.toggle(
+          "fas"
+        ); /*fas 他要去哪裡搜尋到fas*/
+      });
+    });
+
+    // 拿出所有筆
+    var showFormButtonList = document.querySelectorAll(".showFormButton");
+    // 拿出所有看不見的表單
+    var hiddenFormList = document.querySelectorAll(".hidden-form");
+    // 讓所有筆按了會長出對應表單
+    showFormButtonList.forEach(function (button, index) {
+      button.addEventListener("click", function () {
+
+        hiddenFormList[index].style.display = hiddenFormList[index].style.display == "none" ? "block" : "none";
+      });
+    });
+    /*上面的詳細*/
+    /*if (hiddenFormList[index].style.display == "none") {
+      hiddenFormList[index].style.display = "block";
+    } else {
+      hiddenFormList[index].style.display = "none";
+    }*/
+
+    var addtaskList = document.querySelectorAll(".addtext");
+    var hiddenFormfirstList = document.querySelectorAll(".hidden-formfirst");
+    addtaskList.forEach(function (button, index) {
+      button.addEventListener("click", function () {
+        if (hiddenFormfirstList[index].style.display == "none") {
+          hiddenFormfirstList[index].style.display = "block";
+        } else {
+          hiddenFormfirstList[index].style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+
 </html>
